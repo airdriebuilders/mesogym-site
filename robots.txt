@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mesogym.com/sitemap.xml

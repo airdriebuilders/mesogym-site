@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RIR Workout Tracker: Log Every Set, Weight and Rep | MesoGym</title>
+<meta name="description" content="An RIR workout tracker that logs every set against your rep range and RIR target, with a suggested weight from last time and one tap to fill the rest.">
+<link rel="canonical" href="https://mesogym.com/log-every-set.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MesoGym">
+<meta property="og:title" content="RIR Workout Tracker: Log Every Set, Weight and Rep | MesoGym">
+<meta property="og:description" content="An RIR workout tracker that logs every set against your rep range and RIR target, with a suggested weight from last time and one tap to fill the rest.">
+<meta property="og:url" content="https://mesogym.com/log-every-set.html">
+<meta property="og:image" content="https://mesogym.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RIR Workout Tracker: Log Every Set, Weight and Rep | MesoGym">
+<meta name="twitter:description" content="An RIR workout tracker that logs every set against your rep range and RIR target, with a suggested weight from last time and one tap to fill the rest.">
+<meta name="twitter:image" content="https://mesogym.com/assets/og-image.png">
+
+<meta name="theme-color" content="#05070d">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Note: every app screenshot on this site shows kg. The app also supports lb; lb versions of the screenshots may be added later. -->
+<a class="skip" href="#main">Skip To Content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="assets/icon-192.png" alt="MesoGym app icon" width="36" height="36"><span>MesoGym</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="site-menu" class="menu" aria-label="Main" hidden>
+    <ul>
+      <li class="menu-sec"><button type="button" class="menu-label" aria-expanded="false" aria-controls="menu-start"><span>Start</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <ul id="menu-start" hidden>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="getting-started.html">Getting Started</a></li>
+      <li><a href="download.html">Download</a></li>
+        </ul></li>
+      <li class="menu-sec"><button type="button" class="menu-label" aria-expanded="false" aria-controls="menu-features"><span>Features</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <ul id="menu-features" hidden>
+      <li><a href="build-your-mesocycle.html">Build Your Mesocycle</a></li>
+      <li><a href="log-every-set.html" aria-current="page">Log Every Set</a></li>
+      <li><a href="training-that-adapts.html">Training That Adapts</a></li>
+      <li><a href="see-your-progress.html">See Your Progress</a></li>
+      <li><a href="interval-timer.html">Interval Timer</a></li>
+      <li><a href="demo-videos.html">Demo Videos</a></li>
+        </ul></li>
+      <li class="menu-sec"><button type="button" class="menu-label" aria-expanded="false" aria-controls="menu-learn"><span>Learn</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <ul id="menu-learn" hidden>
+      <li><a href="learn-as-you-go.html">Learn As You Go</a></li>
+      <li><a href="training-guide.html">Training Guide</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+        </ul></li>
+      <li class="menu-sec"><button type="button" class="menu-label" aria-expanded="false" aria-controls="menu-plans"><span>Plans</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <ul id="menu-plans" hidden>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="family-plan.html">Family Plan</a></li>
+        </ul></li>
+      <li class="menu-sec"><button type="button" class="menu-label" aria-expanded="false" aria-controls="menu-company"><span>Company</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <ul id="menu-company" hidden>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+        </ul></li>
+    </ul>
+  </nav>
+</header>
+<main id="main" class="wrap">
+<section class="page-head"><h1>Log Every Set</h1><p class="lead">Every exercise shows your sets, rep range and RIR target, plus a suggested weight based on last time. Tick a set to log it. Change one weight and MesoGym offers to use it for all sets.</p></section>
+<div class="shots">
+  <figure><img src="assets/screens/02-set-ticked.webp" alt="RIR workout tracker: set 1 of Narrow Stance Squat ticked with a Set Complete message: 1 down, 3 to go" loading="lazy" decoding="async"><figcaption>Tick a set to log it.</figcaption></figure>
+  <figure><img src="assets/screens/04-suggested-weight-applied.webp" alt="Flat Dumbbell Bench Press, 4 sets of 8 to 12 reps at 2 RIR, suggested 31 kg times 10, plus 1 kg" loading="lazy" decoding="async"><figcaption>A suggested weight and the increase over last time.</figcaption></figure>
+  <figure><img src="assets/screens/09-suggested-weight-popup.webp" alt="Prompt asking Use 31 kg for all 4 sets? with Yes, All Sets and No" loading="lazy" decoding="async"><figcaption>Change one set and fill the rest with one tap.</figcaption></figure>
+</div>
+
+<p class="next"><a class="btn" href="interval-timer.html">Next: Interval Timer →</a></p>
+</main>
+<footer>
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a><a href="training-guide.html">Training Guide</a><a href="pricing.html">Pricing</a><a href="family-plan.html">Family Plan</a><a href="faq.html">FAQ</a><a href="download.html">Download</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+  </nav>
+  <p>&copy; 2026 MesoGym · <a href="contact.html">Contact Us</a></p>
+</footer>
+<script src="menu.js"></script>
+<script src="prices.js"></script>
+</body>
+</html>
