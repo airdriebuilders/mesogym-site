@@ -1,4 +1,4 @@
-/* MesoGym site: cyan accent from the MesoGym logo (#4fc3f7 / #51C7FD); dark base matches the app theme "MesoGym Blue" (gym-app src/theme/theme.ts, DEFAULT_THEME = 'mesoblue') */
+/* Meso Gym site: cyan accent from the Meso Gym logo (#4fc3f7 / #51C7FD); dark base matches the app theme "Meso Gym Blue" (gym-app src/theme/theme.ts, DEFAULT_THEME = 'mesoblue') */
 :root{--bg:#05070d;--card:#0c111d;--card2:#131a2a;--line:#22304d;--text:#f1f5ff;--muted:#9aa6c2;--accent:#4fc3f7;--accent2:#51c7fd;--accent-fill:#29b6f6;--accent-hi:#7dd6fb;--accent-lo:#0b97d4;--on-accent:#05070d;--accent-rgb:79,195,247;--bg-rgb:5,7,13;--card-rgb:12,17,29;--radius:14px;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;min-height:100vh;display:flex;flex-direction:column}

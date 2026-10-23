@@ -13,7 +13,7 @@ f.addEventListener('submit',function(e){e.preventDefault();ok.hidden=true;
  if(Date.now()-t0<3000)e2.push('That was quicker than a 1RM attempt. Please take a moment and try again.');
  show(e2);if(e2.length)return;
  if(v('_honey')){ok.hidden=false;f.reset();return;}
- var fd=new FormData(f);fd.set('_subject','MesoGym contact: '+v('subject')+' from '+v('name'));fd.set('_replyto',v('email'));fd.delete('spotter_check');
+ var fd=new FormData(f);fd.set('_subject','Meso Gym contact: '+v('subject')+' from '+v('name'));fd.set('_replyto',v('email'));fd.delete('spotter_check');
  btn.disabled=true;btn.textContent='Sending…';
  fetch(ENDPOINT,{method:'POST',headers:{Accept:'application/json'},body:fd}).then(function(r){return r.json().catch(function(){return {}}).then(function(b){return {r:r,b:b}})})
  .then(function(x){if(x.r.ok&&(x.b.success===true||x.b.success==='true')){ok.hidden=false;f.reset();f.querySelector('.reset').click();ok.scrollIntoView({behavior:'smooth',block:'center'});}
