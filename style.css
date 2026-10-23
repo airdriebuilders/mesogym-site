@@ -112,11 +112,15 @@ footer nav{gap:14px 20px}
 .plates legend{padding:0 6px;font-weight:700}
 .plates.done{border-color:#3ddc84;box-shadow:0 0 18px -6px #3ddc84}
 .plates.over .now{color:#ff6b6b}
-.barbell{display:flex;align-items:center;justify-content:center;height:90px;margin:8px 0}
-.bar{width:38%;height:8px;background:linear-gradient(#cfd6e6,#7d879c);border-radius:4px}
-.side{display:flex;align-items:center;gap:2px;min-width:28%;height:100%}
-.side.left{justify-content:flex-end;flex-direction:row-reverse}
-.side.left::after,.side.right::before{content:'';width:18px;height:12px;background:#9aa3b5;border-radius:2px}
+.barbell{display:flex;align-items:center;width:100%;max-width:560px;height:90px;margin:8px auto}
+.bar{flex:1 1 auto;min-width:40px;height:7px;background:linear-gradient(#cfd6e6,#7d879c)}
+.side{flex:0 0 33%;position:relative;display:flex;align-items:center;gap:2px;height:100%}
+.side::before{content:'';position:absolute;top:50%;height:12px;margin-top:-6px;left:0;right:0;background:linear-gradient(#e3e8f2,#8a94a8);z-index:0}
+.side.left::before{border-radius:6px 0 0 6px}.side.right::before{border-radius:0 6px 6px 0}
+.side::after{content:'';position:absolute;top:50%;width:8px;height:26px;margin-top:-13px;background:#9aa3b5;border-radius:2px;z-index:1}
+.side.left{flex-direction:row-reverse;justify-content:flex-start;padding-right:10px}.side.left::after{right:0}
+.side.right{justify-content:flex-start;padding-left:10px}.side.right::after{left:0}
+.side .disc{position:relative;z-index:2;flex:0 0 auto;width:clamp(6px,2.4vw,10px)}
 .disc{display:block;width:10px;border-radius:3px;border:1px solid rgba(0,0,0,.4)}
 .p25{height:84px;background:#e53935}.p20{height:78px;background:#1e63e6}.p15{height:70px;background:#f9c80e}.p10{height:60px;background:#2fbf71}.p5{height:46px;background:#f1f5ff}.p2_5{height:36px;background:#5b6475}
 .plate-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
