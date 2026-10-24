@@ -89,6 +89,21 @@
   <figure class="main-shot"><img src="assets/screens/01-today-power-level.webp" alt="Meso Gym Train screen showing Meso 2, Week 3 of 5, the next workout with a 2 RIR target and a Start Workout button" width="369" height="800"><figcaption>Your next workout, ready when you open the app.</figcaption></figure>
   <figure class="inset"><img src="assets/screens/15-theme-crimson.webp" alt="The same Train screen in the crimson theme" loading="lazy" width="369" height="800"><figcaption><strong>Pick Your Theme</strong><br>Change the app's look in Settings.</figcaption></figure>
 </section>
+<section class="card wl" id="waitlist" aria-labelledby="waitlist-h">
+  <div class="wl-body">
+  <h2 id="waitlist-h">Be First In The Gym</h2>
+  <p class="muted">Meso Gym launches soon on Android and iPhone. Leave your email and we'll tell you the day it's live.</p>
+  <form class="wl-form contact-form" novalidate>
+    <label for="waitlist-email" class="wl-sr">Email address</label>
+    <div class="wl-row"><input id="waitlist-email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="Your email"><button class="btn primary" type="submit">Notify Me</button></div>
+    <fieldset class="wl-plat"><legend>I'm on (optional)</legend><label><input type="radio" name="platform" value="android"> Android</label><label><input type="radio" name="platform" value="iphone"> iPhone</label></fieldset>
+    <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <p class="wl-err" role="alert" hidden></p>
+    <p class="small muted wl-note">We'll only email you about the launch. Unsubscribe any time. <a href="privacy.html#waitlist">Privacy</a></p>
+  </form>
+  </div>
+  <div class="wl-ok" role="status" tabindex="-1" hidden><h2>You're On The List.</h2><p class="muted">We'll Email You On Launch Day.</p></div>
+</section>
 <section>
 <h2>Explore Meso Gym</h2>
 <!--
@@ -127,5 +142,6 @@
 </footer>
 <script src="menu.js"></script>
 <script src="prices.js"></script>
+<script src="waitlist.js" defer></script>
 </body>
 </html>

@@ -142,3 +142,22 @@ footer nav{gap:14px 20px}
 .brand img{border-radius:9px}
 .form-ok{border:1px solid rgba(var(--accent-rgb),.6);background:rgba(var(--accent-rgb),.08);border-radius:10px;padding:12px 16px;margin-bottom:8px}
 .contact-form [hidden]{display:none}
+/* Launch waitlist box (waitlist.js) */
+.wl{max-width:640px;margin:0 auto 40px;text-align:center}
+.wl h2{margin-bottom:8px}
+.wl > .wl-body > p{margin:0 0 16px}
+.wl-row{display:flex;gap:10px;flex-wrap:wrap}
+.wl-row input{flex:1 1 220px;width:auto}
+.wl-row .btn{flex:0 0 auto;cursor:pointer;font:inherit;font-weight:800}
+.wl-row .btn[disabled]{opacity:.7;cursor:wait}
+.wl-plat{border:0;margin:12px 0 0;padding:0;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+.wl-plat legend{float:left;margin-right:4px;padding:0}
+.contact-form .wl-plat label{display:inline-flex;align-items:center;gap:6px;margin:0;font-weight:600;cursor:pointer}
+.contact-form .wl-plat input{width:18px;height:18px;min-height:0;accent-color:var(--accent-fill);margin:0}
+.wl-err{color:#ff8a8a;margin:10px 0 0}
+.wl-note{margin:12px 0 0}
+.wl-ok h2{color:var(--accent);margin:0 0 6px}
+.wl-ok p{margin:0}
+.wl-ok:focus{outline:none}
+.wl-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wl-compact{margin-top:8px}
