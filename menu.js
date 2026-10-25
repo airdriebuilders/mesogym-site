@@ -10,4 +10,4 @@ s(true);window.addEventListener('resize',function(){s(false)});
 window.addEventListener('orientationchange',function(){setTimeout(function(){h=0;s(true)},300)});})();
 
 /* Subscribe links carry the chosen currency to app.mesogym.com/subscribe. */
-(function(){try{var c=localStorage.getItem("mesolab-currency");if(/^(GBP|USD|CAD|AUD|NZD)$/.test(c||""))document.querySelectorAll("[data-sub-link]").forEach(function(a){a.href="https://app.mesogym.com/subscribe?cur="+c})}catch(e){}})();
+(function(){try{var c=localStorage.getItem("mesolab-currency");if(/^(GBP|USD|CAD|AUD|NZD)$/.test(c||""))document.querySelectorAll("[data-sub-link]").forEach(function(a){var pl=a.getAttribute("data-plan");a.href="https://app.mesogym.com/subscribe?cur="+c+(pl?"&plan="+pl:"")})}catch(e){}})();

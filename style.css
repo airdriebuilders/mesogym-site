@@ -164,3 +164,4 @@ footer nav{gap:14px 20px}
 @media (max-width:600px){.wl-row .btn{flex:1 1 100%}}
 
 .web-save{margin-top:16px}.web-save .plans{margin:12px 0}.plan-mini{padding:4px 0}.plan-mini h3{margin:0 0 4px}.web-save s{color:var(--muted);font-weight:600;margin-right:4px}.save-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 8px;vertical-align:middle}
+.soon-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.6);border-radius:999px;padding:2px 8px;vertical-align:middle}.trainer-tiers .btn{width:100%;text-align:center}
