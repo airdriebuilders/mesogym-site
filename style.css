@@ -168,3 +168,5 @@ footer nav{gap:14px 20px}
 .store-prices-head{margin:1.5rem 0 .75rem}
 .store-prices-head h2{margin:0 0 .25rem}
 .store-prices-head .stores{margin-top:.75rem}
+.plans.single{grid-template-columns:minmax(260px,400px);justify-content:center}
+.plan .stores{justify-content:center}
