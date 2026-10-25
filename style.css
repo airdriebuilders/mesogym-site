@@ -165,8 +165,39 @@ footer nav{gap:14px 20px}
 
 .web-save{margin-top:16px}.web-save .plans{margin:12px 0}.plan-mini{padding:4px 0}.plan-mini h3{margin:0 0 4px}.web-save s{color:var(--muted);font-weight:600;margin-right:4px}.save-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 8px;vertical-align:middle}
 .soon-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.6);border-radius:999px;padding:2px 8px;vertical-align:middle}.trainer-tiers .btn{width:100%;text-align:center}
-.store-prices-head{margin:1.5rem 0 .75rem}
-.store-prices-head h2{margin:0 0 .25rem}
-.store-prices-head .stores{margin-top:.75rem}
-.plans.single{grid-template-columns:minmax(260px,400px);justify-content:center}
 .plan .stores{justify-content:center}
+/* Pricing page tidy-up */
+.lead.one-line{font-size:clamp(.82rem,3.6vw,1.05rem);white-space:nowrap}
+.tier-label{text-align:center;margin:0 auto 12px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tier-label span{font-weight:500;letter-spacing:.03em}
+.plan{display:flex;flex-direction:column;align-items:stretch}
+.plan h2{margin-bottom:10px;line-height:1.2}
+.plan .h-sub{display:block;font-size:1rem;font-weight:600;color:var(--muted);margin-top:2px}
+.plan ul{margin:12px 0 16px}
+.plan > p:last-child,.plan > .stores:last-child{margin-top:auto}
+.store-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 0 14px}
+.btn.small{padding:7px 12px;min-height:34px;font-size:.82rem;border-radius:10px;line-height:1.4;white-space:nowrap}
+.soon-tag{font-size:.66rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 6px;margin-left:4px;vertical-align:1px}
+.price-src{font-size:.75rem;color:var(--muted);margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em}
+.badge-title{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 10px}
+.title-badge{display:inline-block;white-space:nowrap;font-size:.8rem;font-weight:800;line-height:1.5;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 10px}
+.title-badge.outline{color:var(--accent);background:none;border:1px solid rgba(var(--accent-rgb),.6)}
+.save-badge,.soon-badge{white-space:nowrap}
+.web-save{max-width:760px;margin:0 auto 24px}
+.web-save .plans{max-width:none}
+.web-save .plan-mini{text-align:center}
+.web-save .plan-mini .price{font-size:1.6rem}
+#corporate-plans{grid-template-columns:minmax(0,370px);justify-content:center}
+.plan .stores{justify-content:center;gap:10px;margin-top:auto;padding-top:4px}
+.small-note,.cta{max-width:760px;margin-left:auto;margin-right:auto}
+.small-note{margin-bottom:20px}
+@media (max-width:600px){.card{padding:20px}.plans{gap:16px}.price{font-size:1.8rem}}
+.plan-mini .save-badge{display:table;margin:6px auto 4px}
+.web-save > p{text-align:center;max-width:600px;margin-left:auto;margin-right:auto}
+.price [data-web]{font-size:inherit!important;color:var(--text)!important;font-weight:800!important}
+.web-save .price s{font-size:.62em;font-weight:600;color:var(--muted);margin-right:6px}
+.web-save .price.alt,.web-save .price.alt [data-web]{font-size:1.15rem}
+.price .from{font-size:1rem;color:var(--muted);font-weight:600;margin-right:4px}
+@media (max-width:600px){.tier-label span{display:block;margin-top:2px}}
+@media (max-width:600px){.tier-label .dot{display:none}}
+.web-save .price.alt s{font-size:.85em}
