@@ -83,7 +83,7 @@
 <article class="card prose">
 <p class="muted">Applies to the Meso Gym apps for Android and iPhone and the Meso Gym web app. Last updated: 24 October 2026.</p>
 
-  <h2>In short</h2>
+  <h2>In Short</h2>
   <ul>
     <li>Your training data and progress photos stay on your device. Meso Gym has no servers storing your workouts or photos, no analytics, no crash reporting, no ads and no tracking.</li>
     <li>Accounts are optional and only used for the Family plan. Single subscribers never need one.</li>
@@ -91,12 +91,12 @@
     <li>Meso Gym does not read or write Apple Health, Health Connect or any other health data.</li>
   </ul>
 
-  <h2>Data stored on your device</h2>
+  <h2>Data Stored On Your Device</h2>
   <p>Your mesocycles, workouts (exercises, sets, weights, reps, joint-pain ticks), post-session feedback scores, settings, custom exercises, past-meso history, the list of feedback you've sent and onboarding/tip preferences are stored only on your device: in the app's private storage on Android or iPhone, or in your browser's local storage on the web. We cannot see, access or recover this data.</p>
   <p>On Android, the system's own backup (Android Auto Backup to your Google account, if you have it turned on) may include the app's data so it can be restored on a new phone. That backup is managed by Google under your account settings; we don't receive it. On iPhone, the app's data is included in your device's iCloud or computer backups in the same way, managed by Apple under your settings.</p>
   <p>You can export your data as a backup file from Settings → Backup (Export JSON); your phone's share sheet opens and you choose where the file goes. Progress photos are not included in that file. You can delete your training data at any time with Settings → Backup → Erase All Data, by clearing the app's storage, or by uninstalling the app.</p>
 
-  <h2 id="photos">Progress photos and the camera</h2>
+  <h2 id="photos">Progress Photos And The Camera</h2>
   <ul>
     <li>Meso Gym asks for camera access only when you tap Add Photo in Progress Photos, never when you install or open the app. If you'd rather not use the camera, you can choose an existing picture from your photo library instead; on iPhone the system asks for photo library access only if you do that.</li>
     <li>Photos are compressed and stored only in the app's private storage on your device. They are never uploaded, never sent to us or anyone else, never linked to your account, and never included in the Meso Gym backup file or in feedback.</li>
@@ -105,13 +105,13 @@
     <li>You can turn camera access off at any time in your phone's Settings.</li>
   </ul>
 
-  <h2 id="update-check">Update check and website files</h2>
+  <h2 id="update-check">Update Check And Website Files</h2>
   <p>When the app starts it checks whether an update is required. It downloads a small settings file (app-config.json) from our website app.mesogym.com (Google Firebase Hosting; older app versions read a copy on GitHub Pages) and asks the store for the latest version (the App Store's public lookup on iPhone, Google Play's in-app update service on Android). These are standard requests: nothing about you or your training is added to them. As with any web request, Google, Apple or (for older app versions) GitHub receive technical details such as your IP address and device/browser information and may log them under their own privacy policies; we don't receive or keep those logs. The rest-timer sounds and intro video are part of the app and don't contact any server.</p>
 
   <h2>Notifications</h2>
   <p>Rest-timer notifications are scheduled on your device only. Meso Gym doesn't send push notifications from a server.</p>
 
-  <h2>Feedback you send</h2>
+  <h2>Feedback You Send</h2>
   <p>If you use Feedback (Settings → Feedback) and tap send, the following is sent to us by email through the form-to-email service <a href="https://formsubmit.co/" rel="noopener" target="_blank">FormSubmit</a>:</p>
   <table>
     <tr><th>Always</th><td>The category and your message; the app version; a short device summary (for example "Android 15 · Chrome"), the browser/WebView user-agent string, the screen size, and the time.</td></tr>
@@ -119,26 +119,26 @@
   </table>
   <p>Nothing is sent unless you tap send. FormSubmit receives the submission in order to forward it to us by email (see <a href="https://formsubmit.co/privacy.pdf" rel="noopener" target="_blank">FormSubmit's privacy policy</a>), and the email is then stored in our Gmail inbox (Google). We use feedback only to improve Meso Gym and, if you gave an email address, to reply to you. We don't sell it or use it for marketing. Ask us to delete your feedback at any time using our <a href="contact.html">contact form</a>.</p>
 
-  <h2 id="waitlist">Launch waitlist</h2>
+  <h2 id="waitlist">Launch Waitlist</h2>
   <p>If you join the launch waitlist on mesogym.com, we store your email address, the platform you picked (if any), the page you signed up on and the time, in Google Firebase (Cloud Firestore). We use it only to email you when Meso Gym launches, and nobody else can read it. We delete the list after launch, or sooner if you ask us through the <a href="contact.html">contact form</a>.</p>
 
-  <h2>Exercise demo videos (YouTube)</h2>
+  <h2>Exercise Demo Videos (YouTube)</h2>
   <p>Demo videos are embedded from YouTube using its privacy-enhanced mode (youtube-nocookie.com) and only load when you tap a video. When a video loads, YouTube (Google) receives the usual technical information such as your IP address and device/browser details, under <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a>. In the Android and iPhone apps, the player is loaded through a small page on our website (app.mesogym.com, hosted on Google Firebase Hosting; older app versions use a copy on GitHub Pages), because YouTube won't play embeds directly from inside an app. That page receives only the video's ID, and Google (or GitHub, for older app versions) may log the request (for example your IP address) under <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a> or <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener" target="_blank">GitHub's privacy statement</a>. "Open in YouTube" opens the YouTube app or website, which is outside Meso Gym.</p>
 
-  <h2>Intro video</h2>
+  <h2>Intro Video</h2>
   <p>The intro video is part of the app and plays from your device; it doesn't contact any server.</p>
 
   <h2>Children</h2>
   <p>Meso Gym is a strength-training planner intended for adults and is not directed at children under 13.</p>
 
-  <h2>Accounts and the Family plan</h2>
+  <h2>Accounts And The Family Plan</h2>
   <p>If you create an account (only needed to start or join a Family plan), Google Firebase (Authentication and Cloud Firestore, operated by Google) stores: your email address, the name you enter or that Google or Apple provides, the sign-in method, and an account ID. If you use Sign in with Apple you can hide your email; Apple then gives us a relay address. For the Family plan we also store which family you belong to, the family's members (name and email, visible to the family organiser), invite codes, and the family subscription's status and renewal date. Your workouts and progress photos are never uploaded.</p>
   <p id="delete">You can leave a family, or delete your account, at any time in the Account tab, or without the app via <a href="delete-account.html">Delete your Meso Gym account</a>. Deleting your account removes your account and family records. It does not cancel a store subscription; cancel that in your App Store or Google Play settings. You can also ask us to delete your account using our <a href="contact.html?subject=Support">contact form</a>.</p>
 
   <h2>Subscriptions</h2>
   <p>Meso Gym Pro (Single £9.99 a month or £59.99 a year, with a 7-day free trial for new subscribers; Family £24.99 a month or £149.99 a year, no free trial) is bought through the App Store or Google Play; we never see your card details. We use RevenueCat to check whether you have Meso Gym Pro. RevenueCat receives an anonymous app user ID (or, if you're signed in, your account ID) and your purchase receipts and subscription status from the store. For Family plans, RevenueCat notifies our server (a Cloudflare Worker) so that members' access can be turned on or off; it writes only the family's subscription status to Firestore. See <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat's privacy policy</a>.</p>
 
-  <h2>Your rights</h2>
+  <h2>Your Rights</h2>
   <p>Because your training data and photos never leave your device, you control them directly. For feedback you've sent, you can ask us for a copy, a correction or deletion, and under UK GDPR you can complain to the Information Commissioner's Office (ico.org.uk).</p>
 
   <h2>Changes</h2>
