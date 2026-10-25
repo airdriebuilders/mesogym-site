@@ -1,6 +1,6 @@
 # Meso Gym
 
-> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on Android and as a Web app (sign in on any browser with your Meso Gym account).
+> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on iPhone, Android and as a Web app (sign in on any browser with your Meso Gym account).
 
 ## Who It's For
 
@@ -31,6 +31,7 @@
 
 ## Platforms
 
+- iPhone: App Store, https://apps.apple.com/app/id6821985919
 - Android: Google Play, https://play.google.com/store/apps/details?id=com.mesolab.app
 - Web app: sign in on any browser with your Meso Gym account.
 
