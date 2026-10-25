@@ -209,3 +209,88 @@ footer nav{gap:14px 20px}
 .rp-switch{margin:28px auto 0;max-width:880px}
 .rp-switch h2{margin-top:0}
 .steps-list{padding-left:1.3em}.steps-list li{margin:0 0 10px}
+
+/* ===== Site-wide polish (matches the pricing page tidy-up) ===== */
+/* Type: balanced headings, no lonely last words */
+h1,h2,h3,.lead,figcaption,summary{text-wrap:balance}
+p,li{text-wrap:pretty}
+h1{margin:16px 0 12px}
+.page-head{padding:16px 0 32px}
+.page-head h1{margin-top:8px}
+.page-head .lead{max-width:620px;margin:10px auto 0;line-height:1.5}
+.lead{line-height:1.5}
+h2.center,.wrap > h2,.wrap > section:not([class]) > h2:first-child{margin-top:40px}
+.hero .lead{max-width:660px}
+/* Buttons: hover, focus, consistent secondary style */
+.btn{background:rgba(var(--card-rgb),.72);color:var(--accent);line-height:1.3;text-align:center;transition:border-color .15s,background-color .15s,filter .15s,transform .15s}
+.btn.primary{color:var(--on-accent);background:linear-gradient(180deg,var(--accent-hi) 0%,var(--accent-fill) 55%,var(--accent-lo) 100%)}
+.btn.disabled{background:var(--card2);color:var(--muted)}
+@media (hover:hover){.btn:not(.primary):not(.disabled):hover{border-color:rgba(var(--accent-rgb),.7);background:rgba(var(--accent-rgb),.1)}.btn:hover{transform:translateY(-1px)}.btn.disabled:hover{transform:none}}
+.btn:focus-visible,.tile:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+a:hover{color:var(--accent-hi)}
+/* Cards and prose */
+.card{padding:28px}
+.prose{line-height:1.65}
+.prose h2{font-size:1.25rem;margin:28px 0 10px;line-height:1.3}
+.prose h2:first-child{margin-top:0}
+.prose p{margin:0 0 14px}
+.prose > p:last-child{margin-bottom:0}
+.prose ul,.prose ol{padding-left:1.4em;margin:0 0 16px}
+.prose li::marker,.faq li::marker,.plan li::marker{color:var(--accent)}
+.prose ol li::marker{font-weight:800}
+.prose strong{color:var(--text)}
+.prose .muted strong{color:inherit}
+.wrap > .card + .card{margin-top:20px}
+.plans + .card,.plans + .wl{margin-top:24px}
+/* Plan cards: buttons sit at the bottom so cards line up */
+.plan > .btn:last-child{margin-top:auto}
+.plan > p.price.alt{margin-bottom:16px}
+.plan .muted{font-size:.95rem}
+.trainer-tiers .plan > p:last-child{margin:auto 0 0}
+.trainer-tiers .price{margin-top:4px}
+/* Prices: the currency-picker spans keep the big price style (data-web/data-pt were picking up the small /month style) */
+.price span[data-pt],.price span[data-web]{font-size:inherit;color:var(--text);font-weight:800}
+/* FAQ accordions */
+.faq details{padding:0;transition:border-color .15s}
+.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'';flex:0 0 9px;width:9px;height:9px;margin-right:4px;border:solid var(--accent);border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg) translate(-2px,-1px)}
+.faq details[open]{border-color:rgba(var(--accent-rgb),.6)}
+.faq details[open] summary{color:var(--accent)}
+.faq details > :not(summary){margin:0 20px 16px}
+.faq details > p + p{margin-top:-6px}
+@media (hover:hover){.faq details:hover{border-color:rgba(var(--accent-rgb),.5)}}
+/* Home tiles: 3 across on desktop so 9 tiles make an even grid */
+@media (min-width:820px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile h3{line-height:1.25}
+/* Screenshots */
+.shots{gap:32px}
+figcaption{line-height:1.45}
+.next{margin:12px 0 0}
+/* Demo videos: cards, centred last row */
+.demo-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:24px}
+.demo-row > figure{flex:0 1 300px;max-width:300px;background:rgba(var(--card-rgb),.82);border:1px solid rgba(var(--accent-rgb),.26);border-radius:var(--radius);padding:12px 12px 18px;box-shadow:0 0 18px -8px rgba(var(--accent-rgb),.45)}
+.demo-row > figure > img{box-shadow:none}
+.demo-guide{text-align:left;margin-top:12px;padding:0 4px}
+.demo-guide h2{font-size:1rem;margin:0 0 8px;text-align:left;font-weight:700;line-height:1.3}
+.demo-guide ol{margin:0;padding-left:1.2em;font-size:.92rem;color:var(--muted)}
+.demo-guide li{margin-bottom:6px}
+.demo-guide li::marker{color:var(--accent);font-weight:700}
+/* Download/waitlist */
+.wl{padding:28px}
+/* Footer */
+footer nav{max-width:860px;margin:0 auto}
+footer{padding:28px 20px 32px}
+footer p{margin-top:14px}
+/* Badges line up in headings */
+h1 .soon-badge,h2 .soon-badge{position:relative;top:-.15em;margin-left:4px}
+@media (max-width:600px){
+  .card{padding:20px}
+  .page-head{padding:8px 0 24px}
+  .prose h2{font-size:1.15rem}
+  .faq summary{padding:14px 16px}
+  .faq details > :not(summary){margin:0 16px 14px}
+  .demo-row > figure{flex-basis:100%;max-width:340px}
+  h2.center,.wrap > h2,.wrap > section:not([class]) > h2:first-child{margin-top:32px}
+}
