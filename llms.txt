@@ -1,0 +1,61 @@
+# Meso Gym
+
+> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on Android now; iPhone (App Store) is Coming Soon.
+
+## Who It's For
+
+- Lifters who want to build muscle with structured, progressive hypertrophy blocks.
+- People looking for an alternative to the RP Hypertrophy App.
+- Households who want one subscription for up to 5 people (Family plan).
+- Personal trainers, studios and gyms who want to give clients Meso Gym Pro (Trainer plans, sold on the website).
+
+## Key Features
+
+- Mesocycles of 4, 5 or 6 working weeks plus a deload, built from a template or your own exercises.
+- An RIR (reps in reserve) target on every exercise, with a suggested weight for each set.
+- Pump, soreness and workload feedback after each session; Meso Gym adds or removes sets for that day next week.
+- Muscle priorities: Emphasise, Grow or Maintain per muscle.
+- Progress charts, personal bests, a Power Level score and progress photos.
+- Rest and interval timer, and 348 exercise demos.
+- Workouts are kept on your phone and sync to your account across devices if you sign in.
+- Import From RP (bring your RP Hypertrophy App history): Coming Soon, in the next app update.
+- Trainer Dashboard for coaches: Coming Soon.
+
+## Pricing (US list prices, USD)
+
+- Meso Gym Pro: $13.99 a month or $79.99 a year, with a 7-day Pro trial.
+- Family: $33.99 a month or $199.99 a year, for up to 5 people (you plus 4 invited by code).
+- Subscribing on the website costs 10% less than in the app.
+- Trainer plans (website only, no trial): from £24.99 a month for you plus 4 clients, up to you plus 39 clients.
+- No lifetime plan. Full prices in other currencies: https://mesogym.com/pricing.html
+
+## Platforms
+
+- Android: Google Play, https://play.google.com/store/apps/details?id=com.mesolab.app
+- iPhone: App Store, Coming Soon (https://mesogym.com/download.html)
+
+## Key Pages
+
+- [Home](https://mesogym.com/)
+- [Pricing](https://mesogym.com/pricing.html)
+- [Download](https://mesogym.com/download.html)
+- [Getting Started](https://mesogym.com/getting-started.html)
+- [Build Your Mesocycle](https://mesogym.com/build-your-mesocycle.html)
+- [Log Every Set](https://mesogym.com/log-every-set.html)
+- [Training That Adapts](https://mesogym.com/training-that-adapts.html)
+- [See Your Progress](https://mesogym.com/see-your-progress.html)
+- [Training Guide](https://mesogym.com/training-guide.html)
+- [FAQ](https://mesogym.com/faq.html)
+- [Family Plan](https://mesogym.com/family-plan.html)
+- [Trainer Plans](https://mesogym.com/trainer-plans.html)
+- [Press Kit](https://mesogym.com/press.html)
+- [About](https://mesogym.com/about.html)
+
+## Comparisons
+
+- [RP Hypertrophy App Alternatives: 5 Apps Compared](https://mesogym.com/rp-hypertrophy-alternatives.html)
+- [Meso Gym vs RP Hypertrophy](https://mesogym.com/rp-hypertrophy-alternative.html)
+- [Meso Gym vs Alpha Progression](https://mesogym.com/meso-gym-vs-alpha-progression.html)
+- [Meso Gym vs Hevy](https://mesogym.com/meso-gym-vs-hevy.html)
+- [Meso Gym vs Strong](https://mesogym.com/meso-gym-vs-strong.html)
+- [Switch From RP (Import From RP, Coming Soon)](https://mesogym.com/switch-from-rp.html)
