@@ -8,3 +8,6 @@ document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target
 function s(f){var n=c();if(f||n>h){h=n;r.style.setProperty('--bgh',h+'px');}}
 s(true);window.addEventListener('resize',function(){s(false)});
 window.addEventListener('orientationchange',function(){setTimeout(function(){h=0;s(true)},300)});})();
+
+/* Subscribe links carry the chosen currency to app.mesogym.com/subscribe. */
+(function(){try{var c=localStorage.getItem("mesolab-currency");if(/^(GBP|USD|CAD|AUD|NZD)$/.test(c||""))document.querySelectorAll("[data-sub-link]").forEach(function(a){a.href="https://app.mesogym.com/subscribe?cur="+c})}catch(e){}})();
