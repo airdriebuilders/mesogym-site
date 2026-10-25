@@ -201,3 +201,10 @@ footer nav{gap:14px 20px}
 @media (max-width:600px){.tier-label span{display:block;margin-top:2px}}
 @media (max-width:600px){.tier-label .dot{display:none}}
 .web-save .price.alt s{font-size:.85em}
+
+/* IMPORT FROM RP "Coming Soon" labels (switch-from-rp.html, home, pricing, Build Your Mesocycle, Meso Gym vs RP).
+   When an app build with Import From RP is approved, change the next line to: .rp-soon{display:none} */
+.rp-soon{display:inline-block}
+.rp-switch{margin:28px auto 0;max-width:880px}
+.rp-switch h2{margin-top:0}
+.steps-list{padding-left:1.3em}.steps-list li{margin:0 0 10px}
