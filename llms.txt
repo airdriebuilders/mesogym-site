@@ -1,13 +1,13 @@
 # Meso Gym
 
-> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on Android now; iPhone (App Store) is Coming Soon.
+> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on Android and as a Web app (sign in on any browser with your Meso Gym account).
 
 ## Who It's For
 
 - Lifters who want to build muscle with structured, progressive hypertrophy blocks.
 - People looking for an alternative to the RP Hypertrophy App.
 - Households who want one subscription for up to 5 people (Family plan).
-- Personal trainers, studios and gyms who want to give clients Meso Gym Pro (Trainer plans, sold on the website).
+- Personal trainers, studios and gyms who want to give clients Meso Gym Pro and monitor their training (Trainer plans, sold on the website).
 
 ## Key Features
 
@@ -18,8 +18,8 @@
 - Progress charts, personal bests, a Power Level score and progress photos.
 - Rest and interval timer, and 348 exercise demos.
 - Workouts are kept on your phone and sync to your account across devices if you sign in.
-- Import From RP (bring your RP Hypertrophy App history): Coming Soon, in the next app update.
-- Trainer Dashboard for coaches: Coming Soon.
+- Import From RP: bring your RP Hypertrophy App history (finished mesocycles, logged sets and unstarted plans) into Meso Gym.
+- Trainer and gym client monitoring: Starter, Pro Trainer, Studio and Gym plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard on Android and the Web app. Details: https://mesogym.com/trainer-plans.html
 
 ## Pricing (US list prices, USD)
 
@@ -32,7 +32,7 @@
 ## Platforms
 
 - Android: Google Play, https://play.google.com/store/apps/details?id=com.mesolab.app
-- iPhone: App Store, Coming Soon (https://mesogym.com/download.html)
+- Web app: sign in on any browser with your Meso Gym account.
 
 ## Key Pages
 
@@ -58,4 +58,4 @@
 - [Meso Gym vs Alpha Progression](https://mesogym.com/meso-gym-vs-alpha-progression.html)
 - [Meso Gym vs Hevy](https://mesogym.com/meso-gym-vs-hevy.html)
 - [Meso Gym vs Strong](https://mesogym.com/meso-gym-vs-strong.html)
-- [Switch From RP (Import From RP, Coming Soon)](https://mesogym.com/switch-from-rp.html)
+- [Switch From RP (Import From RP)](https://mesogym.com/switch-from-rp.html)
