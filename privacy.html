@@ -81,20 +81,31 @@
 <main id="main" class="wrap">
 <section class="page-head"><h1>Privacy Policy</h1></section>
 <article class="card prose">
-<p class="muted">Applies to the Meso Gym apps for Android and iPhone and the Meso Gym web app. Last updated: 24 October 2026.</p>
+<p class="muted">Applies to the Meso Gym apps for Android and iPhone and the Meso Gym web app. Last updated: 25 October 2026.</p>
 
   <h2>In Short</h2>
   <ul>
-    <li>Your training data and progress photos stay on your device. Meso Gym has no servers storing your workouts or photos, no analytics, no crash reporting, no ads and no tracking.</li>
-    <li>Accounts are optional and only used for the Family plan. Single subscribers never need one.</li>
-    <li>The only things that leave your device are your account and Family details if you create an account, subscription status handled by the stores and RevenueCat, (1) feedback you choose to send, which is emailed to us via FormSubmit, (2) exercise demo videos you choose to play, which load from YouTube, and (3) a standard request for a small update-check file from our website (app.mesogym.com, hosted on Google Firebase Hosting) and the app store.</li>
+    <li>If you're signed in, your training data syncs to your account in Google Firebase (Cloud Firestore) so it's the same on every device you sign in on. If you're signed out, it stays on your device. <a href="#sync">More on sync</a>.</li>
+    <li>Progress photos always stay on your device. They are never uploaded. Meso Gym has no analytics, no crash reporting, no ads and no tracking.</li>
+    <li>Accounts are optional in the Android and iPhone apps; you need one to sync, to use the web app or to start or join a Family plan.</li>
+    <li>The only things that leave your device are your account and Family details and your synced training data if you sign in, subscription status handled by the stores and RevenueCat, (1) feedback you choose to send, which is emailed to us via FormSubmit, (2) exercise demo videos you choose to play, which load from YouTube, and (3) a standard request for a small update-check file from our website (app.mesogym.com, hosted on Google Firebase Hosting) and the app store.</li>
     <li>Meso Gym does not read or write Apple Health, Health Connect or any other health data.</li>
   </ul>
 
   <h2>Data Stored On Your Device</h2>
-  <p>Your mesocycles, workouts (exercises, sets, weights, reps, joint-pain ticks), post-session feedback scores, settings, custom exercises, past-meso history, the list of feedback you've sent and onboarding/tip preferences are stored only on your device: in the app's private storage on Android or iPhone, or in your browser's local storage on the web. We cannot see, access or recover this data.</p>
+  <p>Your mesocycles, workouts (exercises, sets, weights, reps, joint-pain ticks), post-session feedback scores, settings, custom exercises, past-meso history, the list of feedback you've sent and onboarding/tip preferences are stored on your device: in the app's private storage on Android or iPhone, or in your browser's local storage on the web. If you're signed out, they stay only on your device and we cannot see, access or recover them. If you're signed in, a copy of your training data also syncs to your account (see <a href="#sync">Cloud Sync</a>).</p>
   <p>On Android, the system's own backup (Android Auto Backup to your Google account, if you have it turned on) may include the app's data so it can be restored on a new phone. That backup is managed by Google under your account settings; we don't receive it. On iPhone, the app's data is included in your device's iCloud or computer backups in the same way, managed by Apple under your settings.</p>
-  <p>You can export your data as a backup file from Settings → Backup (Export JSON); your phone's share sheet opens and you choose where the file goes. Progress photos are not included in that file. You can delete your training data at any time with Settings → Backup → Erase All Data, by clearing the app's storage, or by uninstalling the app.</p>
+  <p>You can export your data as a backup file from Settings → Backup (Export JSON); your phone's share sheet opens and you choose where the file goes. Progress photos are not included in that file. You can delete your training data at any time with Settings → Backup → Erase All Data, by clearing the app's storage, or by uninstalling the app. If you're signed in, Erase All Data also removes it from your account on every device you're signed in on; clearing storage or uninstalling only removes the copy on that device.</p>
+
+  <h2 id="sync">Cloud Sync</h2>
+  <ul>
+    <li><strong>What's stored:</strong> when you're signed in, your mesocycles, logged sessions and sets, post-session feedback scores, past-meso history, templates, custom exercises, exercise notes, settings and the list of feedback you've sent (the copy kept in the app, not the email itself) are stored in Google Firebase (Cloud Firestore, operated by Google), under your account ID. Each item is saved with the time it last changed. Progress photos and the app theme are not synced.</li>
+    <li><strong>Why:</strong> so your training is the same on every device you sign in on, including the web app, and so it isn't lost if you change or lose your phone. We use it only to provide sync. We don't analyse it, sell it, share it or use it for advertising.</li>
+    <li><strong>Who can read it:</strong> only you, when signed in to your account. Firestore's security rules stop anyone else, including other members of your family, from reading or changing it. Data is encrypted in transit and at rest by Google.</li>
+    <li><strong>Signed out:</strong> nothing is synced. Your training data stays on your device. Signing out leaves the synced copy in your account, ready for when you sign in again.</li>
+    <li><strong>Deleting it:</strong> deleting a meso or past mesocycle while signed in removes it from your account on every device you're signed in on. <a href="#delete">Delete Account</a> removes all your synced training data from the cloud along with your account; workouts already on your phone are kept on that phone until you erase them or uninstall the app.</li>
+    <li><strong>Photos:</strong> progress photos are never uploaded, synced or linked to your account.</li>
+  </ul>
 
   <h2 id="photos">Progress Photos And The Camera</h2>
   <ul>
@@ -132,14 +143,15 @@
   <p>Meso Gym is a strength-training planner intended for adults and is not directed at children under 13.</p>
 
   <h2>Accounts And The Family Plan</h2>
-  <p>If you create an account (only needed to start or join a Family plan), Google Firebase (Authentication and Cloud Firestore, operated by Google) stores: your email address, the name you enter or that Google or Apple provides, the sign-in method, and an account ID. If you use Sign in with Apple you can hide your email; Apple then gives us a relay address. For the Family plan we also store which family you belong to, the family's members (name and email, visible to the family organiser), invite codes, and the family subscription's status and renewal date. Your workouts and progress photos are never uploaded.</p>
-  <p id="delete">You can leave a family, or delete your account, at any time in the Account tab, or without the app via <a href="delete-account.html">Delete your Meso Gym account</a>. Deleting your account removes your account and family records. It does not cancel a store subscription; cancel that in your App Store or Google Play settings. You can also ask us to delete your account using our <a href="contact.html?subject=Support">contact form</a>.</p>
+  <p>If you create an account (needed to sync, to use the web app or to start or join a Family plan), Google Firebase (Authentication and Cloud Firestore, operated by Google) stores: your email address, the name you enter or that Google or Apple provides, the sign-in method, and an account ID. If you use Sign in with Apple you can hide your email; Apple then gives us a relay address. For the Family plan we also store which family you belong to, the family's members (name and email, visible to the family organiser), invite codes, and the family subscription's status and renewal date. While you're signed in, your training data also syncs to your account (see <a href="#sync">Cloud Sync</a>). Progress photos are never uploaded.</p>
+  <p id="delete">You can leave a family, or delete your account, at any time in the Account tab, or without the app via <a href="delete-account.html">Delete your Meso Gym account</a>. Deleting your account removes your account and family records and all your synced training data from the cloud. It does not cancel a store subscription; cancel that in your App Store or Google Play settings. You can also ask us to delete your account using our <a href="contact.html?subject=Support">contact form</a>.</p>
 
   <h2>Subscriptions</h2>
   <p>Meso Gym Pro (Single £9.99 a month or £59.99 a year, with a 7-day free trial for new subscribers; Family £24.99 a month or £149.99 a year, no free trial) is bought through the App Store or Google Play; we never see your card details. We use RevenueCat to check whether you have Meso Gym Pro. RevenueCat receives an anonymous app user ID (or, if you're signed in, your account ID) and your purchase receipts and subscription status from the store. For Family plans, RevenueCat notifies our server (a Cloudflare Worker) so that members' access can be turned on or off; it writes only the family's subscription status to Firestore. See <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat's privacy policy</a>.</p>
+  <p id="web-checkout">On the web you can also subscribe at a lower web price through checkout on our website, which is processed by <a href="https://stripe.com/" rel="noopener" target="_blank">Stripe</a>. Stripe collects and processes your payment details; we never see or store your card number. Stripe tells us your subscription's plan, status and renewal date, which we store with your account (Google Firebase) so Meso Gym Pro unlocks on every device you sign in on. You can manage or cancel a web subscription at any time from Account. See <a href="https://stripe.com/privacy" rel="noopener" target="_blank">Stripe's privacy policy</a>.</p>
 
   <h2>Your Rights</h2>
-  <p>Because your training data and photos never leave your device, you control them directly. For feedback you've sent, you can ask us for a copy, a correction or deletion, and under UK GDPR you can complain to the Information Commissioner's Office (ico.org.uk).</p>
+  <p>Your photos never leave your device, and your training data stays on your device unless you sign in, so you control them directly. You can export a copy of your training data from Settings → Backup at any time, delete individual mesos, erase it all with Erase All Data, or remove everything in your account with Delete Account. For your account, synced data and feedback you've sent, you can ask us for a copy, a correction or deletion, and under UK GDPR you can complain to the Information Commissioner's Office (ico.org.uk).</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, we'll update this page and the date above.</p>
