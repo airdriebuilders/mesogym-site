@@ -203,8 +203,9 @@ footer nav{gap:14px 20px}
 .web-save .price.alt s{font-size:.85em}
 
 /* IMPORT FROM RP "Coming Soon" labels (switch-from-rp.html, home, pricing, Build Your Mesocycle, Meso Gym vs RP).
-   When an app build with Import From RP is approved, change the next line to: .rp-soon{display:none} */
-.rp-soon{display:inline-block}
+   When an app build with Import From RP is approved, change the next line to: .rp-soon{display:none}
+   (this also hides the "coming in the next app update" wording in the switch-from-rp.html FAQ; update that page's FAQ JSON-LD then too). */
+.rp-soon{visibility:visible}
 .rp-switch{margin:28px auto 0;max-width:880px}
 .rp-switch h2{margin-top:0}
 .steps-list{padding-left:1.3em}.steps-list li{margin:0 0 10px}
