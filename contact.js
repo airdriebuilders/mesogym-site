@@ -1,6 +1,6 @@
-/* Contact form: validates in the browser, then sends via FormSubmit's AJAX API. Address is assembled at runtime so no email address appears in the page source (anti-spam). */
+/* Contact form: validates in the browser, then sends via FormSubmit's AJAX API. Uses FormSubmit's random-string alias, so no email address appears in the page source (anti-spam). */
 (function(){var f=document.getElementById('contact-form');if(!f)return;
-var ADDR=['mesogymapp','gmail.com'].join(String.fromCharCode(64)),ENDPOINT='https://formsubmit.co/ajax/'+ADDR,t0=Date.now();f.action='https://formsubmit.co/'+ADDR;
+var ADDR='2478af84980f2c22bf7e994997e75b4c',ENDPOINT='https://formsubmit.co/ajax/'+ADDR,t0=Date.now();f.action='https://formsubmit.co/'+ADDR;
 var errBox=f.querySelector('.form-errors'),ok=f.querySelector('.form-ok'),btn=f.querySelector('button[type=submit]');
 var q=new URLSearchParams(location.search).get('subject');if(q){var o=f.querySelector('#f-subject option[value="'+q+'"]');if(o)o.selected=true;}
 function show(list){var ul=errBox.querySelector('ul');ul.innerHTML='';list.forEach(function(m){var li=document.createElement('li');li.textContent=m;ul.appendChild(li)});errBox.hidden=!list.length;if(list.length)errBox.scrollIntoView({behavior:'smooth',block:'center'});}
