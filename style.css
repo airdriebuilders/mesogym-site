@@ -60,6 +60,7 @@ footer p{margin:10px 0 0}
 .page-head .lead{margin-top:8px}
 .hero-shot{display:flex;justify-content:center;align-items:flex-end;gap:24px;flex-wrap:wrap;margin:8px 0 48px}
 .main-shot img{width:min(300px,70vw)}
+.main-shot video{display:block;margin:0 auto;width:min(300px,70vw);max-width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#0b0f14;border-radius:var(--radius);border:1px solid rgba(var(--accent-rgb),.3);box-shadow:0 0 24px -8px rgba(var(--accent-rgb),.55)}
 .inset img{width:120px}
 .inset figcaption{font-size:.85rem}
 figure{margin:0;text-align:center}
