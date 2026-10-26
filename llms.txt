@@ -17,7 +17,7 @@
 - Muscle priorities: Emphasise, Grow or Maintain per muscle.
 - Progress charts, personal bests, a Power Level score and progress photos.
 - Rest and interval timer, and 348 exercise demos.
-- Workouts are kept on your phone and sync to your account across devices if you sign in.
+- Training is saved on your phone and, when you sign in, syncs to your Meso Gym account and the web app. It still works offline. Progress photos stay on the phone.
 - Import From RP: bring your RP Hypertrophy App history (finished mesocycles, logged sets and unstarted plans) into Meso Gym.
 - Trainer and gym client monitoring: Starter, Pro Trainer, Studio and Gym plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard on Android and the Web app. Details: https://mesogym.com/trainer-plans.html
 
