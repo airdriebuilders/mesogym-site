@@ -17,6 +17,7 @@ function get(){try{var s=localStorage.getItem('mesolab-currency');if(P[s])return
 function apply(cur){var p=P[cur];
   document.querySelectorAll('[data-price]').forEach(function(el){el.textContent=p[0]+p[K[el.getAttribute('data-price')]].toFixed(2)});
   document.querySelectorAll('[data-web]').forEach(function(el){el.textContent=p[0]+W[cur][WK[el.getAttribute('data-web')]].toFixed(2)});
+  document.querySelectorAll('[data-save]').forEach(function(el){var k=el.getAttribute('data-save'),w=W[cur][WK[k]],a=p[{im:1,iy:2,fm:3,fy:4}[k]];el.textContent='Save '+Math.floor(100*(1-w/a)+1e-9)+'%'});
   document.querySelectorAll('[data-pt]').forEach(function(el){var k=el.getAttribute('data-pt').split(':');el.textContent=p[0]+PT[cur][k[0]][+k[1]].toFixed(2)});
   document.querySelectorAll('[data-sub-link]').forEach(function(a){var pl=a.getAttribute('data-plan');a.href='https://app.mesogym.com/subscribe?cur='+cur+(pl?'&plan='+pl:'')});
   document.querySelectorAll('[data-cur]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-cur')===cur)});
