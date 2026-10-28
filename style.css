@@ -296,3 +296,5 @@ h1 .soon-badge,h2 .soon-badge{position:relative;top:-.15em;margin-left:4px}
   .demo-row > figure{flex-basis:100%;max-width:340px}
   h2.center,.wrap > h2,.wrap > section:not([class]) > h2:first-child{margin-top:32px}
 }
+
+.tiles-more{text-align:center;margin:-24px 0 48px}

@@ -38,6 +38,7 @@
 ## Key Pages
 
 - [Home](https://mesogym.com/)
+- [All Features, with app screens](https://mesogym.com/features/): myorep, myorep match and drop sets, the live workout screen, auto-progression, mesocycle builder, progress tracking, plan and history, trainer dashboard
 - [Pricing](https://mesogym.com/pricing.html)
 - [Download](https://mesogym.com/download.html)
 - [Getting Started](https://mesogym.com/getting-started.html)
