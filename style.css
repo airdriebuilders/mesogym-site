@@ -310,4 +310,12 @@ footer .social a:hover,footer .social a:focus-visible{color:#29b6f6;background:r
 footer .social a:focus-visible{outline:2px solid #29b6f6;outline-offset:2px}
 footer .social svg{width:21px;height:21px;display:block}
 
-.wa-cta{margin:18px 0;text-align:center}.wa-btn{display:inline-flex;align-items:center;gap:10px;margin-left:6px}.wa-btn svg{width:20px;height:20px;flex:none}
+.wa-card{display:flex;align-items:center;gap:18px;max-width:760px;margin:0 auto 56px;padding:22px 24px;text-align:left}
+.prose .wa-card{max-width:none;margin:16px 0 24px;background:rgba(var(--bg-rgb),.45)}
+.wa-badge{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;color:var(--accent-fill);background:rgba(var(--accent-rgb),.12);border:1px solid rgba(var(--accent-rgb),.38);box-shadow:0 0 16px -6px rgba(var(--accent-rgb),.7)}
+.wa-body{flex:1 1 auto;min-width:0}
+.wa-card .wa-title,.prose .wa-card .wa-title{margin:0 0 4px;color:var(--text);text-align:inherit;font-size:1.1rem;line-height:1.3}
+.wa-card .wa-sub,.prose .wa-card .wa-sub{margin:0;color:var(--muted);font-size:.95rem;line-height:1.5}
+.wa-card .wa-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border-radius:999px;font-weight:700;white-space:nowrap;text-decoration:none}
+.wa-btn svg{width:18px;height:18px;flex:none}
+@media (max-width:700px){.wa-card{flex-direction:column;align-items:center;text-align:center;gap:12px;padding:24px 20px;margin-bottom:40px}.wa-card .wa-btn{width:100%;margin-top:6px}}
