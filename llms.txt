@@ -25,7 +25,7 @@
 
 - Meso Gym Pro, Individual plan (shown as Single in the app): $13.99 a month or $79.99 a year, with a 7-day Pro trial. Your first 2 sessions are free, no card needed.
 - Family: $33.99 a month or $199.99 a year, for up to 5 people (you plus 4 invited by code).
-- Subscribing on the website costs at least 10% less than in the app (US Individual monthly: $11.99 on the website vs $13.99 in the app, 14% less).
+- Subscribing on the website costs less than in the app (US Individual monthly: $11.99 on the website vs $13.99 in the app, 14% less).
 - Trainer plans (website only, no trial): from $34.99 a month for you plus 4 clients, up to you plus 39 clients.
 - No lifetime plan. Full prices in other currencies: https://mesogym.com/pricing.html
 
