@@ -304,3 +304,5 @@ h1 .soon-badge,h2 .soon-badge{position:relative;top:-.15em;margin-left:4px}
 
 .tiles-more{text-align:center;margin:-24px 0 48px}
 .price span.save-badge{display:table;font-size:.72rem;color:var(--on-accent);font-weight:800;margin:4px auto 0}
+footer .social a{color:var(--muted);text-decoration:none}
+footer .social a:hover{color:var(--accent)}
