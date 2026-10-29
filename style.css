@@ -305,7 +305,9 @@ h1 .soon-badge,h2 .soon-badge{position:relative;top:-.15em;margin-left:4px}
 .tiles-more{text-align:center;margin:-24px 0 48px}
 .price span.save-badge{display:table;font-size:.72rem;color:var(--on-accent);font-weight:800;margin:4px auto 0}
 footer .social{display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:clamp(0px,2vw,10px);margin:16px 0}
-footer .social a{flex:0 1 40px;min-width:30px;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--muted);text-decoration:none;transition:color .15s,background-color .15s}
+footer .social a{flex:0 1 40px;min-width:28px;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--muted);text-decoration:none;transition:color .15s,background-color .15s}
 footer .social a:hover,footer .social a:focus-visible{color:#29b6f6;background:rgba(41,182,246,.1)}
 footer .social a:focus-visible{outline:2px solid #29b6f6;outline-offset:2px}
 footer .social svg{width:21px;height:21px;display:block}
+
+.wa-cta{margin:18px 0;text-align:center}.wa-btn{display:inline-flex;align-items:center;gap:10px;margin-left:6px}.wa-btn svg{width:20px;height:20px;flex:none}
