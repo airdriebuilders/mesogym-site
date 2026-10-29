@@ -21,7 +21,7 @@
 .feat-card{display:flex;flex-direction:column;height:100%;text-decoration:none;color:var(--text);background:rgba(var(--card-rgb),.82);border:1px solid rgba(var(--accent-rgb),.3);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 18px -8px rgba(var(--accent-rgb),.45);transition:transform .15s,box-shadow .15s}
 .feat-card:hover,.feat-card:focus-visible{transform:translateY(-3px);box-shadow:0 0 26px -6px rgba(var(--accent-rgb),.8)}
 .feat-thumb{display:block;padding:14px 14px 0;background:linear-gradient(180deg,rgba(var(--accent-rgb),.16),rgba(var(--accent-rgb),.03));border-bottom:1px solid rgba(var(--accent-rgb),.3)}
-.feat-card img{display:block;width:100%;height:auto;aspect-ratio:780/620;object-fit:cover;object-position:top;border:1px solid rgba(var(--accent-rgb),.25);border-bottom:0;border-radius:12px 12px 0 0;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);mask-image:linear-gradient(180deg,#000 72%,transparent)}
+.feat-card img{display:block;width:100%;height:auto;aspect-ratio:780/620;object-fit:contain}
 .feat-card-text{display:block;padding:16px 18px 18px}
 .feat-card h2{text-align:left;font-size:1.15rem;margin:0 0 6px;color:var(--accent)}
 .feat-card p{margin:0;color:var(--muted);font-size:.95rem}
