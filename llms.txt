@@ -1,6 +1,6 @@
 # Meso Gym
 
-> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on iPhone, Android and as a Web app (sign in on any browser with your Meso Gym account).
+> Meso Gym is a hypertrophy training app and workout planner. It plans your training in mesocycles, gives every exercise an RIR target with a suggested weight, and adjusts next week's sets from your pump, soreness and workload ratings. It is an alternative to the RP Hypertrophy App. Available on iPhone, Android and as a web app (sign in on any browser with your Meso Gym account).
 
 ## Who It's For
 
@@ -11,22 +11,22 @@
 
 ## Key Features
 
-- Mesocycles of 4, 5 or 6 working weeks plus a deload, built from a template or your own exercises.
+- Mesocycles of 4, 5 or 6 working weeks plus a deload. Build It For Me plans a whole block from four questions, or start from a template or your own exercises.
 - An RIR (reps in reserve) target on every exercise, with a suggested weight for each set.
 - Pump, soreness and workload feedback after each session; Meso Gym adds or removes sets for that day next week.
 - Muscle priorities: Emphasise, Grow or Maintain per muscle.
 - Progress charts, personal bests, a Power Level score and progress photos.
 - Rest and interval timer, and 348 exercise demos.
 - Training is saved on your phone and, when you sign in, syncs to your Meso Gym account and the web app. It still works offline. Progress photos stay on the phone.
-- Import From RP: bring your RP Hypertrophy App history (finished mesocycles, logged sets and unstarted plans) into Meso Gym.
-- Trainer and gym client monitoring: Starter, Pro Trainer, Studio and Gym plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard on Android and the Web app. Details: https://mesogym.com/trainer-plans.html
+- Import From RP: bring your RP Hypertrophy App history (finished mesocycles, logged sets and unstarted plans) into Meso Gym. In the web app now; in the iPhone and Android apps from version 1.4.0.
+- Trainer and gym client monitoring: PT Starter, Pro Trainer, Studio and Gym plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard in the Android app and the web app (not the iPhone app). Details: https://mesogym.com/trainer-plans.html
 
 ## Pricing (US list prices, USD)
 
-- Meso Gym Pro: $13.99 a month or $79.99 a year, with a 7-day Pro trial.
+- Meso Gym Pro, Individual plan (shown as Single in the app): $13.99 a month or $79.99 a year, with a 7-day Pro trial. Your first 2 sessions are free, no card needed.
 - Family: $33.99 a month or $199.99 a year, for up to 5 people (you plus 4 invited by code).
-- Subscribing on the website costs at least 10% less than in the app (US Pro monthly: $11.99 on the website vs $13.99 in the app, 14% less).
-- Trainer plans (website only, no trial): from £24.99 a month for you plus 4 clients, up to you plus 39 clients.
+- Subscribing on the website costs at least 10% less than in the app (US Individual monthly: $11.99 on the website vs $13.99 in the app, 14% less).
+- Trainer plans (website only, no trial): from $34.99 a month for you plus 4 clients, up to you plus 39 clients.
 - No lifetime plan. Full prices in other currencies: https://mesogym.com/pricing.html
 
 ## Platforms
