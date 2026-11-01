@@ -319,3 +319,23 @@ footer .social svg{width:21px;height:21px;display:block}
 .wa-card .wa-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 20px;border-radius:999px;font-weight:700;white-space:nowrap;text-decoration:none}
 .wa-btn svg{width:18px;height:18px;flex:none}
 @media (max-width:700px){.wa-card{flex-direction:column;align-items:center;text-align:center;gap:12px;padding:24px 20px;margin-bottom:40px}.wa-card .wa-btn{width:100%;margin-top:6px}}
+/* Goals + glossary (draft, Nov 1) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:8px 0 12px}
+.goal{text-align:center;padding:24px 20px}
+.goal-art{display:block;margin:0 auto 10px;width:120px;height:96px}
+.goal h3{margin:0 0 8px;color:var(--accent);font-size:1.2rem}
+.goal p{margin:0 0 8px}
+.goals-note{text-align:center;margin:0 0 40px}
+.home-goals{margin:0 0 48px}
+.home-goals .goal{padding:20px 16px}
+.glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:16px 0}
+.gl-item{background:rgba(var(--card-rgb),.82);border:1px solid rgba(var(--accent-rgb),.2);border-radius:var(--radius);padding:14px 16px}
+.gl-item dt{font-weight:800;color:var(--text);margin:0 0 4px}
+.gl-item dd{margin:0;color:var(--muted)}
+.gl-item:target{border-color:var(--accent);box-shadow:0 0 0 2px rgba(var(--accent-rgb),.35)}
+.goal-line{font-weight:700;color:var(--text);font-size:1.15rem;margin:0 0 8px}
+.home-goals h2{text-align:center}
+a.goal{display:block;color:var(--text);text-decoration:none;min-height:44px}
+a.goal:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (hover:hover){a.goal:hover{border-color:rgba(var(--accent-rgb),.6)}}
