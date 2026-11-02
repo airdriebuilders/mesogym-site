@@ -172,7 +172,8 @@ footer nav{gap:14px 20px}
 .soon-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.6);border-radius:999px;padding:2px 8px;vertical-align:middle}.trainer-tiers .btn{width:100%;text-align:center}
 .plan .stores{justify-content:center}
 /* Pricing page tidy-up */
-.lead.one-line{font-size:clamp(.82rem,3.6vw,1.05rem);white-space:nowrap}
+.lead.one-line{font-size:clamp(.82rem,3.6vw,1.05rem);text-wrap:balance}
+@media (min-width:821px){.page-head .lead.one-line{max-width:none;white-space:nowrap}}
 .tier-label{text-align:center;margin:0 auto 12px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .tier-label span{font-weight:500;letter-spacing:.03em}
 .plan{display:flex;flex-direction:column;align-items:stretch}
