@@ -34,7 +34,7 @@ footer p{margin:10px 0 0}
 .skip:focus{left:8px}
 .site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:rgba(var(--bg-rgb),.82);border-bottom:1px solid rgba(var(--accent-rgb),.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:800;font-size:1.15rem}
-.brand img{border-radius:50%;box-shadow:0 0 14px -4px rgba(var(--accent-rgb),.7)}
+.brand img{border-radius:10px;box-shadow:0 0 14px -4px rgba(var(--accent-rgb),.7)}
 .menu-btn{width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:rgba(var(--card-rgb),.8);border:1px solid rgba(var(--accent-rgb),.35);border-radius:10px;cursor:pointer}
 .menu-btn span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .2s,opacity .2s}
 .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
