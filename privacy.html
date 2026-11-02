@@ -85,12 +85,13 @@
 <main id="main" class="wrap">
 <section class="page-head"><h1>Privacy Policy</h1></section>
 <article class="card prose">
-<p class="muted">Applies to the Meso Gym apps for Android and iPhone and the Meso Gym web app. Last updated: 27 October 2026.</p>
+<p class="muted">Applies to the Meso Gym apps for Android and iPhone, the Meso Gym web app and the mesogym.com website. Last updated: 2 November 2026.</p>
 
   <h2>In Short</h2>
   <ul>
     <li>If you're signed in, your training data syncs to your account in Google Firebase (Cloud Firestore) so it's the same on every device you sign in on. If you're signed out, it stays on your device. <a href="#sync">More on sync</a>.</li>
-    <li>Progress photos always stay on your device. They are never uploaded. Meso Gym has no analytics, no crash reporting, no ads and no tracking.</li>
+    <li>Progress photos always stay on your device. They are never uploaded. The Meso Gym apps and web app have no analytics, no crash reporting, no ads and no tracking.</li>
+    <li>Our website, mesogym.com, uses Google Analytics cookies only if you tap Accept on the cookie banner. <a href="#cookies">More on website cookies</a>.</li>
     <li>Accounts are optional in the Android and iPhone apps; you need one to sync, to use the web app or to start or join a Family plan.</li>
     <li>The only things that leave your device are your account and Family details and your synced training data if you sign in, the training summary you choose to share with a personal trainer (only if you opt in), the one welcome email we send when you create an account, subscription status handled by the stores and RevenueCat, (1) feedback you choose to send, which is emailed to us via FormSubmit, (2) exercise demo videos you choose to play, which load from YouTube, and (3) a standard request for a small update-check file from our website (app.mesogym.com, hosted on Google Firebase Hosting) and the app store.</li>
     <li>Meso Gym does not read or write Apple Health, Health Connect or any other health data.</li>
@@ -142,6 +143,18 @@
   <h2>Exercise Demo Videos (YouTube)</h2>
   <p>Demo videos are embedded from YouTube using its privacy-enhanced mode (youtube-nocookie.com) and only load when you tap a video. When a video loads, YouTube (Google) receives the usual technical information such as your IP address and device/browser details, under <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a>. In the Android and iPhone apps, the player is loaded through a small page on our website (app.mesogym.com, hosted on Google Firebase Hosting; older app versions use a copy on GitHub Pages), because YouTube won't play embeds directly from inside an app. That page receives only the video's ID, and Google (or GitHub, for older app versions) may log the request (for example your IP address) under <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a> or <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener" target="_blank">GitHub's privacy statement</a>. "Open in YouTube" opens the YouTube app or website, which is outside Meso Gym.</p>
 
+  <h2 id="cookies">Website Cookies And Analytics</h2>
+  <p>On the mesogym.com website we use Google Analytics 4 (operated by Google) to see how many people visit and which pages help them, so we can improve the site. It only runs if you tap <strong>Accept</strong> on the cookie banner. Until then, and if you tap <strong>Reject</strong>, the Google Analytics script isn't loaded, no analytics cookies are set and nothing is sent to Google Analytics.</p>
+  <ul>
+    <li><strong>Cookies:</strong> if you accept, Google Analytics sets two first-party cookies on mesogym.com, <code>_ga</code> and <code>_ga_6PB1LLG2K9</code>, which hold a random ID so repeat visits can be counted. They last up to 13 months.</li>
+    <li><strong>What's collected:</strong> the pages you view, how you arrived (for example a search engine or a link), roughly where you are (country and city, worked out from your IP address, which Google Analytics doesn't store), your device type, browser, screen size and language, and how you use the page, such as scrolling, clicking links to other sites and time on the page. We don't send your name, email address or anything you type into forms.</li>
+    <li><strong>What we don't do:</strong> Google Signals and advertising features are turned off. We don't use analytics for ads, we don't sell the data, and we don't try to identify you. Google handles the data under <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a> and may process it outside the UK.</li>
+    <li><strong>How long it's kept:</strong> Google Analytics keeps the data for the retention period set in our account, no longer than 14 months, and then deletes it.</li>
+    <li><strong>Your choice:</strong> we remember your answer in your browser's local storage (<code>mg_cookie_consent</code>) for 12 months, then ask again. This isn't a tracking cookie; it's only there to remember your choice.</li>
+    <li><strong>Opting out:</strong> tap <button type="button" class="mg-cc-link" data-cookie-settings>Cookie Settings</button> (also at the bottom of every page) and choose Reject. We then switch Google Analytics off and delete its cookies from mesogym.com. You can also clear cookies in your browser or use <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google's opt-out browser add-on</a>.</li>
+    <li><strong>The apps and web app</strong> (Android, iPhone and app.mesogym.com) don't use Google Analytics or any other analytics.</li>
+  </ul>
+
   <h2>Intro Video</h2>
   <p>The intro video is part of the app and plays from your device; it doesn't contact any server.</p>
 
@@ -178,6 +191,7 @@
   <p>&copy; 2026 Meso Gym · <a href="contact.html">Contact Us</a></p>
 </footer>
 <script src="menu.js"></script>
+<script src="/consent.js?v=1"></script>
 <script src="prices.js?v=3"></script>
 </body>
 </html>
