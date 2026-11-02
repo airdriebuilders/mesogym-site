@@ -19,14 +19,14 @@
 - Rest and interval timer, and 348 exercise demos.
 - Training is saved on your phone and, when you sign in, syncs to your Meso Gym account and the web app. It still works offline. Progress photos stay on the phone.
 - Import From RP: bring your RP Hypertrophy App history (finished mesocycles, logged sets and unstarted plans) into Meso Gym. In the web app now; in the iPhone and Android apps from version 1.4.0.
-- Trainer and gym client monitoring: PT Starter, Pro Trainer, Studio and Gym plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard in the Android app and the web app (not the iPhone app). Details: https://mesogym.com/trainer-plans.html
+- Trainer and gym client monitoring: PT Starter, Pro Trainer, Studio, Small Gym, Large Gym and Corporate plans. Clients join by invite code and get full Meso Gym Pro. Trainers monitor clients' logged workouts and progress on the Trainer Dashboard in the Android app and the web app (not the iPhone app). Details: https://mesogym.com/trainer-plans.html
 
 ## Pricing (US list prices, USD)
 
-- Meso Gym Pro, Individual plan (shown as Single in the app): $13.99 a month or $79.99 a year, with a 7-day Pro trial. Your first 2 sessions are free, no card needed.
-- Family: $33.99 a month or $199.99 a year, for up to 5 people (you plus 4 invited by code).
-- Subscribing on the website costs less than in the app (US Individual monthly: $11.99 on the website vs $13.99 in the app, 14% less).
-- Trainer plans (website only, no trial): from $34.99 a month for you plus 4 clients, up to you plus 39 clients.
+- Meso Gym Pro, Individual plan (shown as Single in the app): $14 a month or $80 a year, with a 7-day Pro trial. Your first 2 sessions are free, no card needed.
+- Family: $34 a month or $200 a year, for up to 5 people (you plus 4 invited by code).
+- Subscribing on the website costs less than in the app (US Individual monthly: $12 on the website vs $14 in the app, 14% less).
+- Trainer plans (website only, no trial): from $35 a month for you plus 4 clients; Studio is you plus 19 clients; Small Gym is up to 100 members, Large Gym is one location with over 100 members, and Corporate covers several locations (ask us).
 - No lifetime plan. Full prices in other currencies: https://mesogym.com/pricing.html
 
 ## Platforms
