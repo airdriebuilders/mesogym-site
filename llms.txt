@@ -61,3 +61,10 @@
 - [Meso Gym vs Hevy](https://mesogym.com/meso-gym-vs-hevy.html)
 - [Meso Gym vs Strong](https://mesogym.com/meso-gym-vs-strong.html)
 - [Switch From RP (Import From RP)](https://mesogym.com/switch-from-rp.html)
+
+## Plans, Gyms, Help And Demo
+
+- All plans and prices: https://mesogym.com/plans.html (detail pages under https://mesogym.com/plans/)
+- Workout app for gyms (Studio, Small Gym, Large Gym, Corporate): https://mesogym.com/workout-app-for-gyms.html
+- Help Centre, step-by-step help for every feature: https://mesogym.com/help/
+- Try the demo (no sign-up, nothing saved, 1 hour): https://mesogym.com/try-demo.html

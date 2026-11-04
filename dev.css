@@ -1,0 +1,146 @@
+/* Dev demo site additions (mesogym-dev.web.app). House style: sky #29b6f6, solid sky buttons with navy #062033 text,
+   36px buttons with 44px tap areas, ticks/icons beside colour, equal-size pills, no orange. */
+:root{--sky:#29b6f6;--navy:#062033}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.dev-strip{background:var(--navy);color:#cfe9fb;text-align:center;font-size:.82rem;padding:6px 12px;border-bottom:1px solid rgba(41,182,246,.5)}
+.dev-strip a{color:var(--sky);font-weight:700}
+.site-header{gap:10px}
+.dev-head{display:flex;align-items:center;gap:8px;margin-left:auto}
+.dev-btn,.dev-try,.dev-help{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;height:36px;padding:0 16px;border-radius:10px;font-weight:800;font-size:.9rem;text-decoration:none;line-height:1;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.dev-btn::after,.dev-try::after,.dev-help::after{content:'';position:absolute;inset:-4px}
+.dev-btn,.dev-try{background:var(--sky);color:var(--navy)}
+.dev-btn:hover,.dev-try:hover{filter:brightness(1.08)}
+.dev-btn:focus-visible,.dev-try:focus-visible,.dev-help:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.dev-help{background:transparent;color:var(--sky);border:1px solid rgba(41,182,246,.6)}
+@media (max-width:420px){.dev-help{display:none}.dev-try{padding:0 12px}}
+.dev-demo-row{margin:12px 0 0}.dev-demo-row .dev-btn{width:100%}
+.dev-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:0 0 8px}
+.dev-tag{display:inline-flex;align-items:center;gap:4px;font-size:.74rem;font-weight:800;color:#cfe9fb;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:2px 9px}
+.dev-tag svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.dev-tag.ok{background:var(--sky);color:var(--navy);border-color:var(--sky)}
+.dev-page h2{margin-top:36px}
+.dev-pt-plans{max-width:none;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.dev-personas,.dev-hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.dev-persona,.dev-hcard{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:var(--text);padding:16px}
+.dev-persona strong,.dev-hcard strong{display:block;color:var(--sky);margin-bottom:2px}
+.dev-persona .muted,.dev-hcard .muted{font-size:.9rem;display:block}
+.dev-persona.soon{opacity:.6}
+a.dev-persona:hover,a.dev-hcard:hover{border-color:var(--sky)}
+.dev-ico{flex:0 0 auto;width:28px;height:28px;fill:none;stroke:var(--sky);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.dev-ico.lg{width:40px;height:40px;vertical-align:middle;margin-right:10px}
+.dev-ico.sm{width:18px;height:18px;vertical-align:-3px;margin-right:6px}
+.dev-search{display:flex;gap:8px;max-width:560px;margin:18px auto 0}
+.dev-search input{flex:1;min-width:0;min-height:44px;border-radius:10px;border:1px solid rgba(41,182,246,.5);background:rgba(12,17,29,.9);color:var(--text);padding:0 14px;font:inherit}
+.dev-search .dev-btn{height:44px}
+.dev-catindex{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:8px 0 12px}
+.dev-catindex h3{margin:0 0 6px}.dev-catindex ul{margin:0;padding-left:18px}
+.dev-hsec h3{color:var(--text);margin:26px 0 10px}
+.dev-crumb{font-size:.88rem;color:var(--muted);margin-bottom:12px}
+.dev-article{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+@media (max-width:760px){.dev-article{grid-template-columns:1fr}}
+.dev-article h2{text-align:left;font-size:1.25rem;margin:24px 0 10px}
+.dev-h1{font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 8px}
+.dev-article .lead{margin:0}
+.dev-steps{counter-reset:s;list-style:none;padding:0}
+.dev-steps li{counter-increment:s;position:relative;padding:8px 0 8px 44px;min-height:34px}
+.dev-steps li::before{content:counter(s);position:absolute;left:0;top:6px;width:30px;height:30px;border-radius:50%;background:var(--sky);color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center}
+.dev-shot{margin:0;position:sticky;top:90px}
+.dev-shot img{width:100%;height:auto;border-radius:18px;border:1px solid rgba(41,182,246,.35);box-shadow:0 10px 30px -10px rgba(0,0,0,.8)}
+.dev-shot figcaption{text-align:center;margin-top:6px}
+.dev-note{border:1px solid rgba(41,182,246,.4);border-radius:10px;padding:10px 12px;color:#cfe9fb}
+.dev-cta{display:flex;flex-wrap:wrap;gap:12px}
+.dev-btn.ghost{background:transparent;color:#e8f6fe;box-shadow:inset 0 0 0 2px var(--sky)}
+/* Nov 2 (user q26): Gym-only features list on the Gym card. Status in words + icon, never colour alone. */
+.dev-feat-h{font-size:.95rem;margin:12px 0 6px;text-align:left}
+.dev-feat-lead{text-align:left;margin:0 0 6px}
+.dev-feats{list-style:none;padding:0;margin:0 0 10px;display:grid;gap:6px;text-align:left}
+.dev-feat{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:start;font-size:.88rem;line-height:1.35}
+.dev-feat svg{width:16px;height:16px;margin-top:2px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.dev-feat.ok svg{color:var(--sky);opacity:1}
+.dev-feat-s{font-size:.72rem;font-weight:800;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:1px 8px;white-space:nowrap;align-self:center}
+.dev-feat.ok .dev-feat-s{background:var(--sky);color:var(--navy);border-color:var(--sky)}
+.dev-gbp{margin:-4px 0 8px}
+@media (max-width:420px){.dev-feat{grid-template-columns:18px 1fr}.dev-feat-s{grid-column:2;justify-self:start}}
+.dev-soon{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px dashed rgba(41,182,246,.6);border-radius:999px;font-weight:800;font-size:.9rem}
+@media (max-width:640px){.lead.one-line{white-space:normal}}
+/* Nov 2 (user t4505u): plans.html is for buying; demo is in the header only. */
+.dev-buy .plan{display:flex;flex-direction:column}
+.dev-buy-row{margin:auto 0 0;padding-top:12px;display:flex;flex-direction:column;align-items:stretch;gap:6px;text-align:center}
+.dev-buy-row .dev-btn{width:100%}
+.dev-buy-note{line-height:1.35}
+/* Nov 2 (user 09:48): currency pills fit one row on any phone: six equal pills, flag + code, tick badge on the selected one
+   (not colour alone), sky-blue selected with navy text, 44px+ tap areas. Flags are inline SVG symbols (no emoji). */
+.currency.dev-cur{display:flex;flex-direction:column;align-items:center;gap:6px;flex-wrap:nowrap;white-space:normal;width:100%;max-width:520px;margin:14px auto 0}
+.dev-cur .dev-cur-l{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;margin:0}
+.dev-seg{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;width:100%}
+.currency.dev-cur .dev-seg button{position:relative;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;min-width:0;width:100%;min-height:44px;height:44px;padding:0 4px;margin:0;border-radius:12px;border:1px solid var(--line,#22304d);background:var(--card2,#131a2a);color:var(--text,#f1f5ff);font:inherit;font-size:.8rem;font-weight:700;line-height:1;letter-spacing:.02em;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.currency.dev-cur .dev-seg button::before,.currency.dev-cur .dev-seg button::after{content:none}
+.dev-seg button:hover{border-color:rgba(41,182,246,.6)}
+.dev-seg button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.currency.dev-cur .dev-seg button[aria-pressed="true"]{background:var(--sky);border-color:var(--sky);color:var(--navy)}
+.dev-flag{flex:0 0 auto;width:21px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.28)}
+.dev-seg button[aria-pressed="true"] .dev-flag{box-shadow:0 0 0 1px rgba(6,32,51,.45)}
+.dev-cur-code{display:block}
+.dev-cur-tick{display:none;position:absolute;top:-6px;right:-5px;width:17px;height:17px;padding:2px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 2px var(--sky);fill:none;stroke:var(--sky);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.dev-seg button[aria-pressed="true"] .dev-cur-tick{display:block}
+.dev-eur-note{display:none;margin:2px 0 0;text-align:center}
+html[data-currency="EUR"] .dev-eur-note{display:block}
+/* Phones: flag above the code so six pills fit in one row down to 320px. */
+@media (max-width:560px){.currency.dev-cur .dev-seg button{flex-direction:column;gap:4px;height:50px;min-height:50px;font-size:.72rem;padding:0 2px}.dev-flag{width:20px;height:13px}.dev-seg{gap:5px}}
+@media (max-width:340px){.dev-seg{gap:3px}.currency.dev-cur .dev-seg button{font-size:.68rem}}
+.dev-faq details{margin:0 0 10px;padding:0}
+.dev-faq summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:10px 16px;font-weight:700;list-style-position:inside}
+.dev-faq details p{margin:0;padding:0 16px 14px;color:var(--muted)}
+.dev-try-plans{margin-top:24px}
+.dev-buy .dev-feats{min-width:0}
+.dev-buy .dev-feat{grid-template-columns:18px minmax(0,1fr)}
+.dev-buy .dev-feat-s{grid-column:2;justify-self:start}
+.dev-feat-box{margin:4px 0 10px;text-align:left}
+.dev-feat-box>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0;font-weight:800;color:var(--sky);list-style:none}
+.dev-feat-box>summary::-webkit-details-marker,.dev-faq summary::-webkit-details-marker{display:none}
+.dev-feat-box>summary::after,.dev-faq summary::after{content:'+';font-weight:800;color:var(--sky);font-size:1.2rem;margin-left:auto}
+.dev-feat-box[open]>summary::after,.dev-faq details[open] summary::after{content:'−'}
+.dev-faq summary{list-style:none;gap:10px}
+.price span[data-gym-gbp],.price span[data-gym-gbp-y]{font-size:inherit;color:var(--text);font-weight:800}
+/* Nov 2 (user t4707u): large embossed G1 logo at the top of the home hero (centred on phones, left on desktop),
+   Try The Demo first, hero spacing tightened so the H1 and Try The Demo sit above the fold (1280x800 and 390x844). */
+.lp-hero{padding-top:var(--s5,24px)}
+.dev-hero-logo{margin:calc(-1 * var(--s2,8px)) 0 var(--s2,8px);line-height:0}
+.dev-hero-logo img{display:inline-block;width:200px;max-width:58vw;height:auto;filter:drop-shadow(0 10px 28px rgba(41,182,246,.18))}
+.lp-hero .lp-eyebrow{margin-bottom:var(--s3,12px)!important}
+.lp-hero h1{margin-bottom:var(--s3,12px)}
+.lp-hero .lp-ctas{margin:var(--s4,16px) 0 var(--s2,8px)}
+.lp-hero .lp-offer{margin:0 0 var(--s4,16px)}
+@media (min-width:960px){
+  .lp-hero{padding-top:var(--s6,32px)}
+  .dev-hero-logo{margin:calc(-1 * var(--s3,12px)) 0 var(--s2,8px)}.dev-hero-logo img{width:280px;max-width:none}
+  .lp-hero .lp-ctas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}
+  .lp-hero .lp-ctas .lp-btn{width:100%}
+}
+/* Nov 2 (user t4704u): Gym Plans page (workout-app-for-gyms.html) and the PT/gym cross-links. */
+.dev-xlink{margin:-4px 0 14px}
+.dev-gp-kicker{margin:0 0 6px;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--sky)}
+.dev-gp-head .dev-gp-cta{justify-content:center;margin-top:18px}
+.dev-gp-sub{max-width:640px;margin:-6px auto 16px}
+.dev-gp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px}
+.dev-gp-card{display:flex;gap:12px;align-items:flex-start;padding:16px;min-width:0}
+.dev-gp-card h3{margin:0 0 4px;font-size:1.02rem;color:var(--sky)}
+.dev-gp-card p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.45}
+.dev-gp-split{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}
+.dev-gp-split.has-shot{grid-template-columns:minmax(0,1fr) 260px}
+@media (max-width:760px){.dev-gp-split.has-shot{grid-template-columns:minmax(0,1fr)}.dev-gp-shot{position:static;max-width:260px;margin:0 auto}}
+.dev-gp-split h2{text-align:left}
+.dev-gp-list{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}
+.dev-gp-list li{position:relative;padding-left:30px;line-height:1.5}
+.dev-gp-list li::before{content:'';position:absolute;left:0;top:3px;width:20px;height:20px;border-radius:50%;background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23062033' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.dev-gp-list strong{color:var(--text)}
+.dev-gp-fit{list-style:none;padding:0;margin:16px auto 6px;max-width:640px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:6px 18px;font-size:.92rem;color:var(--muted)}
+.dev-gp-fit strong{color:var(--sky)}
+.dev-gp-pitch{margin:0 0 6px;font-size:.92rem}
+.dev-gp-plans{margin-top:14px}
+.dev-gp-along{margin-top:36px}.dev-gp-along h2{margin-top:0;text-align:left}
+.dev-gp-steps{max-width:680px}
+.dev-gp-final{text-align:center;margin-top:36px;padding:24px 18px}.dev-gp-final h2{margin-top:0}
+.dev-gp-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+@media (max-width:420px){.dev-gp-cta .dev-btn{flex:1 1 100%}}
+.dev-gym-pointer{display:flex;flex-direction:column}

@@ -1,0 +1,29 @@
+/* Nov 3 (dev): Ask About Corporate enquiry form (corp_form.py, corp-form.js). Sky #29b6f6 on navy #062033, no orange/yellow. */
+.cf-sec{scroll-margin-top:84px}
+.cf-sec > h2,.cf-sec > .pp-lead{text-align:center}
+.cf-form{max-width:760px;margin:var(--s5,24px) auto 0;padding:var(--s5,24px)}
+.cf-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cf-grid{display:grid;grid-template-columns:1fr;column-gap:var(--s4,16px)}
+@media (min-width:640px){.cf-grid{grid-template-columns:1fr 1fr}.cf-grid .cf-field:last-child{grid-column:1 / -1}}
+.cf-field{min-width:0}
+.cf-form .cf-field label{margin:0 0 6px;font-size:.95rem}
+.cf-opt{font-weight:600;color:var(--muted,#b8c4d6);font-size:.85rem}
+.cf-form input[type="tel"]{display:block;width:100%;box-sizing:border-box;min-height:48px;padding:12px 14px;border-radius:12px;border:1px solid rgba(var(--accent-rgb,41,182,246),.3);background:rgba(5,7,13,.6);color:var(--text,#fff);font:inherit;font-size:1rem}
+.cf-form textarea{min-height:112px}
+.cf-form input[aria-invalid="true"],.cf-form select[aria-invalid="true"],.cf-form textarea[aria-invalid="true"]{border-color:#ff8a8a}
+.cf-form select:invalid,.cf-form select option[value=""]{color:#b8c4d6}
+/* one reserved line per field so an inline error never moves the form */
+.cf-err{min-height:1.35em;margin:4px 0 8px!important;font-size:.85rem;line-height:1.35;color:#ff9b9b!important;font-weight:600}
+.cf-tick{display:flex;gap:12px;align-items:flex-start;margin:4px 0 var(--s3,12px)}
+.cf-tick input{flex:none;width:22px;height:22px;margin:1px 0 0;accent-color:#29b6f6;cursor:pointer}
+.cf-tick label{position:relative;margin:0!important;font-weight:500!important;color:var(--text,#fff)!important;line-height:1.45;cursor:pointer}
+.cf-tick label::before{content:'';position:absolute;left:-40px;top:-11px;width:44px;height:44px}
+.cf-send-err{margin:0 0 var(--s3,12px)!important;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,138,138,.5);background:rgba(255,138,138,.08);color:#ffb3b3!important;font-weight:600}
+.cf-submit{margin:var(--s3,12px) 0 var(--s3,12px)!important}
+.cf-submit .lp-btn[disabled]{opacity:.75;cursor:progress}
+.cf-privacy{margin:0!important;font-size:.85rem;color:var(--muted,#b8c4d6)}
+.cf-privacy a{color:var(--sky,#29b6f6);font-weight:700}
+.cf-done{text-align:center;padding:var(--s5,24px) var(--s3,12px);outline:none}
+.cf-done svg{width:48px;height:48px;fill:none;stroke:#29b6f6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cf-done h3{margin:var(--s3,12px) 0 var(--s2,8px)}
+.cf-done p{margin:0;color:var(--text,#fff)!important;font-size:1.05rem}

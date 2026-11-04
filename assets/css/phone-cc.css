@@ -1,0 +1,25 @@
+/* Nov 4 (user t5025u): phone country-code picker (phone-cc.js). Sky #29b6f6 on navy #062033; 48px controls, 44px rows. */
+.cc-row{position:relative;display:flex;gap:8px;align-items:stretch}
+.cc-row input[type="tel"]{flex:1 1 auto;min-width:0}
+.cc-btn{flex:none;width:112px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 10px;border-radius:12px;border:1px solid rgba(41,182,246,.45);background:rgba(5,7,13,.6);color:#fff;font:inherit;font-size:1rem;font-weight:700;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.cc-btn:hover{border-color:#29b6f6}
+.cc-btn:focus-visible,.cc-search:focus-visible{outline:2px solid #29b6f6;outline-offset:2px}
+.cc-flag{font-size:1.2rem;line-height:1}
+.cc-dial{font-variant-numeric:tabular-nums}
+.cc-btn svg{width:16px;height:16px;fill:none;stroke:#29b6f6;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.cc-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.cc-pop{position:absolute;z-index:60;left:0;right:0;top:calc(100% + 6px);background:#062033;border:1px solid rgba(41,182,246,.5);border-radius:14px;box-shadow:0 14px 36px rgba(0,0,0,.55);padding:8px}
+.cc-pop[hidden]{display:none}
+.cc-search{display:block;width:100%;box-sizing:border-box;min-height:44px;padding:10px 12px;border-radius:10px;border:1px solid rgba(41,182,246,.45);background:#05070d;color:#fff;font:inherit;font-size:1rem}
+.cc-search::placeholder{color:#a9b8cc}
+.cc-list{position:relative;list-style:none;margin:8px 0 0;padding:0;max-height:min(296px,50vh);overflow-y:auto;overscroll-behavior:contain}
+.cc-list li{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 10px;border-radius:10px;cursor:pointer;color:#fff;font-size:.98rem}
+.cc-list li[hidden]{display:none}
+.cc-list .cc-f{font-size:1.2rem;flex:none}
+.cc-list .cc-n{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-list .cc-d{flex:none;color:#b8e6fb;font-weight:700;font-variant-numeric:tabular-nums}
+.cc-list li:hover{background:rgba(41,182,246,.14)}
+.cc-list li[aria-selected="true"]{background:rgba(41,182,246,.24)}
+.cc-list li.act{box-shadow:inset 0 0 0 2px #29b6f6}
+.cc-list li.cc-none{cursor:default;color:#c4d0e0;min-height:44px}
+.cc-row input[type="tel"]::placeholder{color:#a9b8cc;opacity:1}

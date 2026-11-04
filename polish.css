@@ -1,0 +1,70 @@
+/* Nov 2 (user, dev only): every page in the home page style. Loaded after assets/home/home.css on polished pages only
+   (main.dev-pol). Not loaded on /help/. Brand: sky #29b6f6 with navy #062033 text on sky buttons, 36px buttons with 44px taps. */
+.dev-pol{--sky:#29b6f6;--navy:#062033;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:72px;--s9:96px;--maxw:1160px}
+.dev-lp-top,.dev-lp-inner,.dev-lp-final{padding:0}
+.wrap.dev-pol{padding-top:0}
+.wrap.dev-pol .lp-wrap{padding-left:0;padding-right:0}
+.dev-lp-top .lp-hero{padding-top:var(--s6);padding-bottom:var(--s5)}
+.dev-pol .lp-hero h1{font-size:clamp(2rem,6.4vw,3.2rem);line-height:1.08;letter-spacing:-.01em}
+.dev-hero-solo{grid-template-columns:1fr!important;text-align:center}
+.dev-hero-solo .lp-hero-copy{max-width:760px;margin:0 auto}
+.dev-hero-solo .lp-ctas{justify-content:center!important;margin-left:auto;margin-right:auto}
+.dev-hero-solo .lp-sub{margin-left:auto!important}
+.dev-hero-solo .lp-checks{display:inline-flex}
+.dev-hero .currency,.dev-hero .save,.dev-hero .trust,.dev-hero .checked{margin-left:0;margin-right:0}
+.dev-hero .save{margin-top:var(--s4)}
+.dev-hero .trust{justify-content:flex-start}
+.dev-hero .checked{text-align:left}
+.dev-media-demo .lp-phone img{aspect-ratio:600/1171}
+.dev-one{display:flex;justify-content:center}
+.dev-one .lp-phone{width:min(290px,72vw)}
+.dev-sec-sub{margin-top:0}
+.dev-next{margin:var(--s6) 0 0}
+.dev-next .lp-btn{display:inline-flex}
+.dev-pol .lp-steps a,.dev-pol .lp-grid3 a{color:var(--sky);font-weight:700;white-space:nowrap}
+.dev-pol .lp-faq-list details{border:1px solid rgba(var(--accent-rgb),.24);border-radius:14px;background:rgba(var(--card-rgb),.84);padding:0 var(--s5)}
+.dev-pol .lp-faq-list summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700;padding:var(--s3) 0}
+.dev-pol .lp-faq-list details p{color:var(--muted);margin:0 0 var(--s4)}
+/* priority pages: the old A4-style page-head and screenshot wall are gone; spacing like home */
+.dev-pri .lp-hero{padding-bottom:var(--s5)}
+.dev-pri>.lp-sec:first-of-type{padding-top:var(--s7)}
+.dev-pri .feat-grid{margin-top:var(--s6)}
+.dev-pri .feat-grid h3{margin:0 0 6px;font-size:1.05rem;color:var(--text)}
+.dev-pri .feat-card{border-radius:16px}
+.dev-steps4{grid-template-columns:1fr}
+@media (min-width:720px){.dev-steps4{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.dev-steps4{grid-template-columns:repeat(4,1fr)}}
+.dev-rp-solo{grid-template-columns:1fr!important}
+.dev-rp-solo .lp-rp-copy{max-width:760px}
+/* buttons on polished pages: 36px, 44px tap area, sky with navy text */
+.dev-pol .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:0;height:36px;padding:0 16px;border-radius:10px;font-size:.92rem;font-weight:700;line-height:1;white-space:nowrap}
+.dev-pol .btn::after{content:'';position:absolute;inset:-4px}
+.dev-pol .btn.primary{background:var(--sky);color:var(--navy);border-color:var(--sky);font-weight:800;box-shadow:none}
+.dev-pol .stores{gap:12px}
+/* legacy content on polished pages: cards and screens like home */
+.dev-pol .card{border-radius:16px;border-color:rgba(var(--accent-rgb),.24);box-shadow:0 0 0 1px rgba(var(--accent-rgb),.04),0 10px 30px -18px rgba(0,0,0,.9)}
+.dev-pol .shots figure img,.dev-pol .feat-shot img{border-radius:28px;padding:6px;background:linear-gradient(160deg,#2a3550,#0b1120 45%,#1b2438);border:1px solid rgba(var(--accent-rgb),.35);box-shadow:0 24px 50px -26px rgba(0,0,0,.95),0 0 32px -14px rgba(var(--accent-rgb),.5)}
+.dev-pol .shots figcaption{color:var(--muted)}
+/* comparison tables: fixed layout, even columns, readable on phones (page width unchanged) */
+.dev-pol .hub{table-layout:fixed;min-width:720px}
+.dev-pol .hub thead th:first-child{width:20%}
+.dev-pol .hub tbody th{white-space:normal;line-height:1.35}
+.dev-pol .hub th,.dev-pol .hub td{overflow-wrap:anywhere;hyphens:auto}
+.dev-pol .hub tbody th,.dev-pol .hub thead th:first-child{position:sticky;left:0;z-index:1;background:#0d1322}
+.dev-pol .hub thead th{vertical-align:bottom}
+.dev-pol .hub td small{font-size:.8rem}
+.dev-pol .hub.dev-vs{min-width:0}
+.dev-pol .hub.dev-vs thead th:first-child{width:38%}
+.dev-pol .hub.dev-vs tbody th,.dev-pol .hub.dev-vs thead th:first-child{position:static}
+.dev-vs-wrap{margin:var(--s4) 0}
+.dev-vs-ctas{margin:var(--s4) 0 0}
+.dev-pol .cmp col.l{width:30%}
+@media (max-width:600px){.dev-pol .hub{min-width:640px;font-size:.85rem}.dev-pol .hub thead th:first-child{width:24%}.dev-pol .hub th,.dev-pol .hub td{padding:10px}
+  .dev-pol .hub.dev-vs{min-width:0}.dev-pol .hub.dev-vs thead th:first-child{width:36%}}
+@media (min-width:960px){.dev-lp-top .lp-hero{padding-top:var(--s7)}.dev-hero .lp-ctas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+main.dev-pol{overflow-x:clip}
+.dev-pol .lp-rp-copy,.dev-pol .lp-feature-copy,.dev-pol .lp-hero-copy{min-width:0}
+@media (max-width:599px){.dev-pol .lp-pair .lp-phone{width:min(270px,47vw)}.dev-pol .lp-pair .lp-phone-sm{width:min(220px,38vw)}}
+.dev-pol .dev-sec-sub{margin-left:auto!important;margin-right:auto!important;text-align:center}
+@media (min-width:900px){.dev-pri .feat-grid{grid-template-columns:repeat(3,1fr)}}
+.dev-pol .prose>h2{text-align:center}
