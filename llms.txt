@@ -26,8 +26,20 @@
 - Meso Gym Pro, Individual plan (shown as Single in the app): $14 a month or $80 a year, with a 7-day Pro trial. Your first 2 sessions are free, no card needed.
 - Family: $34 a month or $200 a year, for up to 5 people (you plus 4 invited by code).
 - Website prices are cheaper than in the app (US Individual monthly: $12 on the website vs $14 in the app).
-- Trainer plans (website only, no trial): from $35 a month for you plus 4 clients; Studio is you plus 19 clients; Small Gym is up to 100 members, Large Gym is one location with over 100 members, and Corporate covers several locations (ask us).
+- Trainer plans (website only, no trial): from $35 a month for you plus 4 clients; Studio is you plus 19 clients; Small Gym is up to 100 members, Large Gym is one location with over 100 members, and Corporate covers several locations. UK prices are listed below.
 - No lifetime plan. Full prices in other currencies: https://mesogym.com/pricing.html
+
+## Pricing (UK website prices, GBP)
+
+- Individual: £9 a month or £54 a year, with a 7-day Pro trial.
+- Family (up to 5 people): £23 a month or £135 a year.
+- PT Starter (you plus 4 clients): £25 a month or £150 a year.
+- Pro Trainer (9 clients): £48 a month or £288 a year.
+- Studio (you plus 19 clients): £90 a month or £540 a year.
+- Small Gym (up to 100 members): £180 a month or £1,080 a year.
+- Large Gym (one location, over 100 members): £260 a month or £1,560 a year.
+- Corporate (several locations): £350 a month or £2,100 a year, plus £175 a month or £1,050 a year for each extra location.
+- Contact: https://mesogym.com/contact.html, WhatsApp +44 7405 725097.
 
 ## Platforms
 
@@ -68,3 +80,27 @@
 - Workout app for gyms (Studio, Small Gym, Large Gym, Corporate): https://mesogym.com/workout-app-for-gyms.html
 - Help Centre, step-by-step help for every feature: https://mesogym.com/help/
 - Try the demo (no sign-up, nothing saved, 1 hour): https://mesogym.com/try-demo.html
+
+## Help Centre Guides Added November 2026
+
+- For personal trainers:
+  - [Missed Workouts](https://mesogym.com/help/missed-workouts.html)
+  - [Open Your Client's App](https://mesogym.com/help/open-client-app.html)
+  - [This Day Only Or Every Week](https://mesogym.com/help/coach-edit-scope.html)
+  - [Message Several Clients](https://mesogym.com/help/message-several.html)
+  - [Voice Notes](https://mesogym.com/help/voice-notes.html)
+  - [Read Receipts And Seen](https://mesogym.com/help/read-receipts.html)
+  - [Your Join Link](https://mesogym.com/help/join-link.html)
+  - [Coach Alerts And PB Notifications](https://mesogym.com/help/coach-alerts.html)
+  - [First-Time Tips For Coaches](https://mesogym.com/help/coach-tips.html)
+- For clients:
+  - [Sort Exercises](https://mesogym.com/help/sort-exercises.html)
+  - [Add Or Remove An Exercise](https://mesogym.com/help/remove-exercise.html)
+  - [Changes When You Have A Coach](https://mesogym.com/help/coached-changes.html)
+  - [Moving A Day](https://mesogym.com/help/move-day.html)
+  - [Badge Shelf](https://mesogym.com/help/badge-shelf.html)
+  - [Camera, Photos And Notifications](https://mesogym.com/help/permissions.html)
+  - [Change Email And Download Your Data](https://mesogym.com/help/change-email-data.html)
+  - [Usernames](https://mesogym.com/help/usernames.html)
+  - [Family Chat And Video Calls](https://mesogym.com/help/family-chat.html)
+  - [Receipts](https://mesogym.com/help/receipts.html)
