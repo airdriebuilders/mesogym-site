@@ -60,22 +60,26 @@
     });
   }
 
+  // Nov 4 (SEO audit item 1): always a fixed overlay at the bottom, never inline in the page, so it can't shift
+  // the layout (CLS). Compact on phones so it covers as little as possible; body gets matching bottom padding so
+  // nothing at the end of the page is ever hidden behind it. Not modal: first visit never steals focus.
   var CSS = '' +
-    '.mg-cc{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:200;max-width:560px;margin:0 auto;' +
-    'background:rgba(12,17,29,.97);color:#f1f5ff;border:1px solid rgba(41,182,246,.45);border-radius:14px;padding:14px 16px 12px;' +
-    'box-shadow:0 10px 32px -8px rgba(0,0,0,.75),0 0 22px -10px rgba(41,182,246,.6);font:inherit;font-size:.92rem;line-height:1.45;' +
-    '-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}' +
+    '.mg-cc{position:fixed;left:calc(10px + env(safe-area-inset-left,0px));right:calc(10px + env(safe-area-inset-right,0px));' +
+    'bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:200;max-width:560px;margin:0 auto;box-sizing:border-box;' +
+    'background:rgba(12,17,29,.97);color:#f1f5ff;border:1px solid rgba(41,182,246,.45);border-radius:14px;padding:10px 12px 6px;' +
+    'box-shadow:0 10px 32px -8px rgba(0,0,0,.75),0 0 22px -10px rgba(41,182,246,.6);font:inherit;font-size:.86rem;line-height:1.4;' +
+    '-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);contain:layout paint}' +
     '.mg-cc[hidden]{display:none}' +
-    '.mg-cc-head{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-weight:800;font-size:1rem}' +
-    '.mg-cc-head svg{width:20px;height:20px;flex:none;fill:none;stroke:#29b6f6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}' +
+    '.mg-cc-head{display:flex;align-items:center;gap:8px;margin:0 0 2px;font-weight:800;font-size:.95rem;color:#f1f5ff}' +
+    '.mg-cc-head svg{width:18px;height:18px;flex:none;fill:none;stroke:#29b6f6;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}' +
     '.mg-cc p{margin:0;color:#c3cce0}' +
-    '.mg-cc p a{color:#7dd6fb;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:4px 0;margin:-4px 0}' +
-    '.mg-cc-now{margin-top:6px!important;font-size:.85rem}' +
-    '.mg-cc-row{display:flex;gap:10px;margin-top:4px}' +
+    '.mg-cc p a{color:#7dd6fb;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:10px 2px;margin:-10px -2px}' +
+    '.mg-cc-now{margin-top:4px!important;font-size:.82rem}' +
+    '.mg-cc-row{display:flex;gap:10px;margin-top:2px}' +
     '.mg-cc-btn{flex:1 1 0;min-width:0;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;margin:4px 0;padding:0 14px;' +
     'border-radius:10px;border:1px solid #29b6f6;background:#29b6f6;color:#062033;font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;' +
-    'box-shadow:0 1px 0 rgba(255,255,255,.3) inset,0 4px 12px -6px rgba(41,182,246,.8);-webkit-tap-highlight-color:transparent}' +
-    '.mg-cc-btn::after{content:"";position:absolute;left:0;right:0;top:-4px;bottom:-4px}' +
+    'box-shadow:0 1px 0 rgba(255,255,255,.3) inset,0 4px 12px -6px rgba(41,182,246,.8);-webkit-tap-highlight-color:transparent;touch-action:manipulation}' +
+    '.mg-cc-btn::after{content:"";position:absolute;left:-5px;right:-5px;top:-4px;bottom:-4px}' +
     '.mg-cc-btn:hover{filter:brightness(1.07)}' +
     '.mg-cc-btn:focus-visible{outline:2px solid #f1f5ff;outline-offset:2px}' +
     '.mg-cc-btn svg{width:16px;height:16px;fill:none;stroke:#062033;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;display:none}' +
@@ -86,11 +90,13 @@
     '.prose .mg-cc-link{text-decoration:underline;text-underline-offset:2px}' +
     '.mg-cc-link:hover{text-decoration:underline}' +
     'body.mg-cc-open{padding-bottom:var(--mg-cc-h,0px)}' +
-    '.mg-cc.mg-cc--inline{position:relative;left:auto;right:auto;bottom:auto;width:calc(100% - 24px);margin:12px auto 0;box-shadow:0 0 22px -12px rgba(41,182,246,.6)}' +
-    '@media (min-width:700px){.mg-cc:not(.mg-cc--inline){left:auto;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:440px}}';
+    '@media (max-width:699px){.mg-cc-head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.mg-cc{padding:8px 12px 4px;font-size:.84rem}}' +
+    '@media (min-width:700px){.mg-cc{left:auto;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));width:420px;padding:14px 16px 10px;font-size:.92rem}' +
+    '.mg-cc-head{font-size:1rem;margin-bottom:4px}}' +
+    '@media (prefers-reduced-motion:no-preference){.mg-cc{animation:mg-cc-in .18s ease-out}@keyframes mg-cc-in{from{opacity:0}to{opacity:1}}}';
 
   var TICK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
-  var el, nowLine, btnA, btnR, ro;
+  var el, nowLine, btnA, btnR, ro, opener = null;
 
   function privacyHref() { return '/privacy.html#cookies'; }
 
@@ -99,17 +105,18 @@
     el = d.createElement('section');
     el.className = 'mg-cc';
     el.setAttribute('role', 'region');
-    el.setAttribute('aria-label', 'Cookie Choices');
+    el.setAttribute('aria-labelledby', 'mg-cc-h');
     el.setAttribute('data-testid', 'cookie-banner');
     el.hidden = true;
     el.innerHTML =
-      '<p class="mg-cc-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 4.8 4.8A4 4 0 0 0 21 12.8z"/><circle cx="8.5" cy="11.5" r=".6"/><circle cx="12" cy="16" r=".6"/><circle cx="15.5" cy="13" r=".6"/></svg>Cookies On Meso Gym</p>' +
-      '<p>We\'d like to use Google Analytics cookies to improve this site. They stay off unless you tap Accept. <a href="' + privacyHref() + '">Privacy Policy</a></p>' +
+      '<p class="mg-cc-head" id="mg-cc-h"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a4 4 0 0 0 4.8 4.8A4 4 0 0 0 21 12.8z"/><circle cx="8.5" cy="11.5" r=".6"/><circle cx="12" cy="16" r=".6"/><circle cx="15.5" cy="13" r=".6"/></svg>Cookies On Meso Gym</p>' +
+      '<p>Google Analytics cookies help us improve this site. They stay off unless you accept. <a href="' + privacyHref() + '">Privacy Policy</a></p>' +
       '<p class="mg-cc-now" hidden></p>' +
       '<div class="mg-cc-row">' +
       '<button type="button" class="mg-cc-btn" data-cc="denied" data-testid="cookie-reject" aria-pressed="false">' + TICK + 'Reject</button>' +
       '<button type="button" class="mg-cc-btn" data-cc="granted" data-testid="cookie-accept" aria-pressed="false">' + TICK + 'Accept</button>' +
       '</div>';
+    // Last in the body: after the page content in reading and tab order, so it never sits in the page flow.
     d.body.appendChild(el);
     nowLine = el.querySelector('.mg-cc-now');
     btnR = el.querySelector('[data-cc="denied"]');
@@ -119,28 +126,16 @@
       if (!b) return;
       choose(b.getAttribute('data-cc'));
     });
+    // Escape closes Cookie Settings (opened on purpose); a first-visit banner needs a choice.
+    el.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && opener) { ev.preventDefault(); hide(); }
+    });
     if (w.ResizeObserver) { ro = new ResizeObserver(pad); ro.observe(el); }
     w.addEventListener('resize', pad);
   }
   function pad() {
-    if (!el || el.hidden || el.classList.contains('mg-cc--inline')) return;
-    d.body.style.setProperty('--mg-cc-h', (el.offsetHeight + 24) + 'px');
-  }
-  function place(inline) {
-    el.classList.toggle('mg-cc--inline', !!inline);
-    var hdr = d.querySelector('header.site-header') || d.querySelector('body > header');
-    if (inline && hdr && hdr.parentNode) hdr.parentNode.insertBefore(el, hdr.nextSibling);
-    else if (inline) d.body.insertBefore(el, d.body.firstChild);
-    else d.body.appendChild(el);
-  }
-  function covers() {
-    var b = el.getBoundingClientRect(), vh = w.innerHeight;
-    var ks = d.querySelectorAll('a.btn, a.lp-btn, a.primary, .stores a, .dev-try, a.dev-btn, [data-sub-link].btn');
-    for (var i = 0; i < ks.length; i++) {
-      var r = ks[i].getBoundingClientRect();
-      if (r.width && r.top < vh && r.bottom > 0 && r.left < b.right && r.right > b.left && r.top < b.bottom && r.bottom > b.top) return true;
-    }
-    return false;
+    if (!el || el.hidden) return;
+    d.body.style.setProperty('--mg-cc-h', (el.offsetHeight + 20) + 'px');
   }
   function show(focus) {
     build();
@@ -149,20 +144,22 @@
     btnR.setAttribute('aria-pressed', cur === 'denied' ? 'true' : 'false');
     if (cur) { nowLine.hidden = false; nowLine.textContent = 'Current Choice: ' + (cur === 'granted' ? 'Accepted' : 'Rejected'); }
     else nowLine.hidden = true;
-    // Phones, first visit: sit in the page under the header so it never covers the hero buttons.
-    // Cookie Settings (opened from the footer or privacy page) floats at the bottom, where the visitor is.
-    // On larger screens it floats bottom-right, unless that would cover a visible button, then it sits inline too.
-    var inline = !focus && w.matchMedia && w.matchMedia('(max-width: 699px)').matches;
-    place(inline);
     el.hidden = false;
-    if (!inline && !focus && covers()) { place(true); inline = true; }
-    if (!inline) { d.body.classList.add('mg-cc-open'); pad(); }
-    if (focus) (cur === 'granted' ? btnA : btnR).focus();
+    d.body.classList.add('mg-cc-open');
+    pad();
+    if (focus) {
+      opener = d.activeElement && d.activeElement !== d.body ? d.activeElement : null;
+      (cur === 'granted' ? btnA : btnR).focus();
+    }
   }
   function hide() {
     if (!el) return;
+    var had = el.contains(d.activeElement);
     el.hidden = true;
     d.body.classList.remove('mg-cc-open');
+    // Give focus back to Cookie Settings (or wherever it came from) instead of dropping it on the body.
+    if (had && opener && d.contains(opener)) { try { opener.focus(); } catch (e) {} }
+    opener = null;
   }
   function choose(val) {
     save(val);
