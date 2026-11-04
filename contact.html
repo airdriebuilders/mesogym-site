@@ -88,12 +88,10 @@
 </header>
 <main id="main" class="lp pp">
 <section class="lp-hero lp-wrap pp-hero-solo" aria-labelledby="c-h1"><div class="lp-hero-copy"><p class="lp-eyebrow">Support, Billing And Press</p><h1 id="c-h1">Contact <span class="lp-hl">Us</span></h1><p class="lp-sub">Questions about Meso Gym on iPhone, Android or the web, support, billing or press? Send us a message and we’ll get back to you.</p></div></section>
-<section class="lp-wrap pp-contact" aria-label="Contact form"><form id="contact-form" class="lp-card contact-form pp-form" method="post" action="https://formsubmit.co/" novalidate>
+<section class="lp-wrap pp-contact" aria-label="Contact form"><form id="contact-form" class="lp-card contact-form pp-form" method="post" action="https://europe-west2-meso-lab-app.cloudfunctions.net/formSubmit" novalidate>
   <div class="form-errors" role="alert" hidden><strong>Please check the form:</strong><ul></ul></div>
   <div class="form-ok" role="status" hidden><strong>Message sent.</strong> Thanks! We'll reply to the email address you gave.</div>
-  <input type="hidden" name="_subject" value="Meso Gym contact">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="form_type" value="contact">
   <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
   <label for="f-name">Name</label>
   <input id="f-name" name="name" type="text" required maxlength="80" autocomplete="name">
@@ -132,7 +130,7 @@
 <script src="menu.js"></script>
 <script src="/consent.js?v=1"></script>
 <script src="plates.js"></script>
-<script src="contact.js"></script>
+<script src="contact.js?v=20261104f"></script>
 <script src="prices.js?v=3"></script>
 <script src="/assets/home/home.js?v=1" defer></script>
 <script src="/assets/js/plans-polish.js?v=2" defer></script>
