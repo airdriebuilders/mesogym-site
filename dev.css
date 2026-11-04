@@ -144,3 +144,10 @@ html[data-currency="EUR"] .dev-eur-note{display:block}
 .dev-gp-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 @media (max-width:420px){.dev-gp-cta .dev-btn{flex:1 1 100%}}
 .dev-gym-pointer{display:flex;flex-direction:column}
+/* Nov 4 (SEO audit): category cards use h2 (heading order), article FAQ h3s, text-only articles. */
+.dev-catindex h2{margin:0 0 6px;font-size:1.17rem;text-align:left}
+.dev-article h3{font-size:1.02rem;margin:16px 0 4px;text-align:left}
+.dev-article h3+p{margin-top:0}
+.dev-noshot{grid-template-columns:minmax(0,1fr)}
+.dev-noshot .dev-art-text{max-width:760px}
+.dev-crumb [aria-current]{color:var(--text)}
