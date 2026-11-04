@@ -17,6 +17,6 @@ f.addEventListener('submit',function(e){e.preventDefault();ok.hidden=true;
  btn.disabled=true;btn.textContent='Sending…';
  fetch(ENDPOINT,{method:'POST',headers:{Accept:'application/json'},body:fd}).then(function(r){return r.json().catch(function(){return {}}).then(function(b){return {r:r,b:b}})})
  .then(function(x){if(x.r.ok&&(x.b.success===true||x.b.success==='true')){ok.hidden=false;f.reset();f.querySelector('.reset').click();ok.scrollIntoView({behavior:'smooth',block:'center'});}
-   else show(['Sorry, your message wasn\'t sent'+(x.b.message?': '+x.b.message:'')+'. Please try again in a few minutes.']);})
- .catch(function(){show(['Sorry, we couldn\'t reach the message service. Please check your connection and try again.']);})
+   else show(['Sorry, your message wasn\'t sent'+(x.b.message?': '+x.b.message:'')+'. Please try again in a few minutes. You can also WhatsApp us on +44 7405 725097 or email support@mesogym.com.']);})
+ .catch(function(){show(['Sorry, we couldn\'t reach the message service. Please check your connection and try again. You can also WhatsApp us on +44 7405 725097 or email support@mesogym.com.']);})
  .then(function(){btn.disabled=false;btn.textContent='Send Message';});});})();
