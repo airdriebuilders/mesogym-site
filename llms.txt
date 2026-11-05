@@ -103,4 +103,4 @@
   - [Change Email And Download Your Data](https://mesogym.com/help/change-email-data.html)
   - [Usernames](https://mesogym.com/help/usernames.html)
   - [Family Chat And Video Calls](https://mesogym.com/help/family-chat.html)
-  - [Receipts](https://mesogym.com/help/receipts.html)
+  - [Payments And Receipts](https://mesogym.com/help/receipts.html)
