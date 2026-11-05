@@ -2,7 +2,7 @@
    which saves the message and emails it to us. No email address appears in the page source. */
 (function(){var f=document.getElementById('contact-form');if(!f)return;
 var ENDPOINT='https://europe-west2-meso-lab-app.cloudfunctions.net/formSubmit',t0=Date.now();f.action=ENDPOINT;
-var FALLBACK=' You can also WhatsApp us on +44 7405 725097 or email support@mesogym.com.';
+var FALLBACK=' You can also WhatsApp us on +44 7405 725097, or try again later.';
 var errBox=f.querySelector('.form-errors'),ok=f.querySelector('.form-ok'),btn=f.querySelector('button[type=submit]');
 var q=new URLSearchParams(location.search).get('subject');if(q){var o=f.querySelector('#f-subject option[value="'+q+'"]');if(o)o.selected=true;}
 function show(list){var ul=errBox.querySelector('ul');ul.innerHTML='';list.forEach(function(m){var li=document.createElement('li');li.textContent=m;ul.appendChild(li)});errBox.hidden=!list.length;if(list.length)errBox.scrollIntoView({behavior:'smooth',block:'center'});}

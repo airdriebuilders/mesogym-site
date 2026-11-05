@@ -31,6 +31,6 @@ f.addEventListener('submit',function(e){e.preventDefault();sendErr.hidden=true;
  fetch(ENDPOINT,{method:'POST',headers:{Accept:'application/json'},body:fd,signal:ctl?ctl.signal:undefined})
  .then(function(r){return r.json().catch(function(){return {}}).then(function(b){return {r:r,b:b}})})
  .then(function(x){if(x.r.ok&&x.b.ok===true){f.reset();finish();}
-   else{var m=(x.b.errors&&x.b.errors[0])||x.b.error||'';sendErr.textContent='Sorry, your enquiry wasn’t sent'+(m?': '+m.replace(/\.$/,''):'')+'. Please try again in a few minutes. You can also WhatsApp us on +44 7405 725097 or email support@mesogym.com.';sendErr.hidden=false;}})
- .catch(function(){sendErr.textContent='Sorry, we couldn’t reach the enquiry service. Please check your connection and try again. You can also WhatsApp us on +44 7405 725097 or email support@mesogym.com.';sendErr.hidden=false;})
+   else{var m=(x.b.errors&&x.b.errors[0])||x.b.error||'';sendErr.textContent='Sorry, your enquiry wasn’t sent'+(m?': '+m.replace(/\.$/,''):'')+'. Please try again in a few minutes. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;}})
+ .catch(function(){sendErr.textContent='Sorry, we couldn’t reach the enquiry service. Please check your connection and try again. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;})
  .then(function(){clearTimeout(tm);btn.disabled=false;btn.textContent='Send Enquiry';});});})();
