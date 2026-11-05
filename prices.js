@@ -1,4 +1,4 @@
-/* Local-currency prices. No network calls: country comes from navigator.languages, then the time zone. Default USD. */
+/* Local-currency prices. No network calls: country comes from navigator.languages, then the time zone. Default USD. Nov 5 (audit W-030): keep locale guess; currency picker must show in the first screen of every price block. */
 (function(){
 var P={USD:['$',14,80,34,200],GBP:['£',10,60,25,150],AUD:['A$',20,115,48,290],CAD:['C$',19,113,47,285],NZD:['NZ$',24,145,59,360]};
 /* Website prices (app.mesogym.com/subscribe): Individual m/y, Family m/y, PT from. Keep in sync with functions/src/plans.ts in the app repo. */
