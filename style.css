@@ -173,8 +173,8 @@ footer nav{gap:14px 20px}
 .wl-compact{margin-top:8px}
 @media (max-width:600px){.wl-row .btn{flex:1 1 100%}}
 
-.web-save{margin-top:16px}.web-save .plans{margin:12px 0}.plan-mini{padding:4px 0}.plan-mini h3{margin:0 0 4px}.web-save s{color:var(--muted);font-weight:600;margin-right:4px}.save-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 8px;vertical-align:middle}
-.soon-badge{display:inline-block;font-size:.72rem;font-weight:800;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.6);border-radius:999px;padding:2px 8px;vertical-align:middle}.trainer-tiers .btn{width:100%;text-align:center}
+.web-save{margin-top:16px}.web-save .plans{margin:12px 0}.plan-mini{padding:4px 0}.plan-mini h3{margin:0 0 4px}.web-save s{color:var(--muted);font-weight:600;margin-right:4px}.save-badge{display:inline-block;font-size:.75rem;font-weight:800;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 8px;vertical-align:middle}
+.soon-badge{display:inline-block;font-size:.75rem;font-weight:800;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.6);border-radius:999px;padding:2px 8px;vertical-align:middle}.trainer-tiers .btn{width:100%;text-align:center}
 .plan .stores{justify-content:center}
 /* Pricing page tidy-up */
 .lead.one-line{font-size:clamp(.82rem,3.6vw,1.05rem);text-wrap:balance}
@@ -188,7 +188,7 @@ footer nav{gap:14px 20px}
 .plan > p:last-child,.plan > .stores:last-child{margin-top:auto}
 .store-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 0 14px}
 .btn.small{padding:7px 12px;min-height:34px;font-size:.82rem;border-radius:10px;line-height:1.4;white-space:nowrap}
-.soon-tag{font-size:.66rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 6px;margin-left:4px;vertical-align:1px}
+.soon-tag{font-size:.75rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:0 6px;margin-left:4px;vertical-align:1px}
 .price-src{font-size:.75rem;color:var(--muted);margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em}
 .badge-title{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 10px}
 .title-badge{display:inline-block;white-space:nowrap;font-size:.8rem;font-weight:800;line-height:1.5;color:var(--on-accent);background:#4ade80;border-radius:999px;padding:2px 10px}
@@ -206,7 +206,7 @@ footer nav{gap:14px 20px}
 .plan-mini .save-badge{display:table;margin:6px auto 4px}
 .web-save > p{text-align:center;max-width:600px;margin-left:auto;margin-right:auto}
 .price [data-web]{font-size:inherit!important;color:var(--text)!important;font-weight:800!important}
-.web-save .price s{font-size:.62em;font-weight:600;color:var(--muted);margin-right:6px}
+.web-save .price s{font-size:.75em;font-weight:600;color:var(--muted);margin-right:6px}
 .web-save .price.alt,.web-save .price.alt [data-web]{font-size:1.15rem}
 .price .from{font-size:1rem;color:var(--muted);font-weight:600;margin-right:4px}
 @media (max-width:600px){.tier-label span{display:block;margin-top:2px}}
@@ -309,7 +309,7 @@ h1 .soon-badge,h2 .soon-badge{position:relative;top:-.15em;margin-left:4px}
 }
 
 .tiles-more{text-align:center;margin:-24px 0 48px}
-.price span.save-badge{display:table;font-size:.72rem;color:var(--on-accent);font-weight:800;margin:4px auto 0}
+.price span.save-badge{display:table;font-size:.75rem;color:var(--on-accent);font-weight:800;margin:4px auto 0}
 footer .social{display:flex;flex-wrap:nowrap;justify-content:center;align-items:center;gap:clamp(0px,2vw,10px);margin:16px 0}
 footer .social a{flex:0 1 40px;min-width:28px;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--muted);text-decoration:none;transition:color .15s,background-color .15s}
 footer .social a:hover,footer .social a:focus-visible{color:#29b6f6;background:rgba(41,182,246,.1)}

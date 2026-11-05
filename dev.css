@@ -15,7 +15,7 @@
 @media (max-width:420px){.dev-help{display:none}.dev-try{padding:0 12px}}
 .dev-demo-row{margin:12px 0 0}.dev-demo-row .dev-btn{width:100%}
 .dev-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:0 0 8px}
-.dev-tag{display:inline-flex;align-items:center;gap:4px;font-size:.74rem;font-weight:800;color:#cfe9fb;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:2px 9px}
+.dev-tag{display:inline-flex;align-items:center;gap:4px;font-size:.75rem;font-weight:800;color:#cfe9fb;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:2px 9px}
 .dev-tag svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
 .dev-tag.ok{background:var(--sky);color:var(--navy);border-color:var(--sky)}
 .dev-page h2{margin-top:36px}
@@ -57,7 +57,7 @@ a.dev-persona:hover,a.dev-hcard:hover{border-color:var(--sky)}
 .dev-feat{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:start;font-size:.88rem;line-height:1.35}
 .dev-feat svg{width:16px;height:16px;margin-top:2px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
 .dev-feat.ok svg{color:var(--sky);opacity:1}
-.dev-feat-s{font-size:.72rem;font-weight:800;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:1px 8px;white-space:nowrap;align-self:center}
+.dev-feat-s{font-size:.75rem;font-weight:800;border:1px solid rgba(41,182,246,.55);border-radius:999px;padding:1px 8px;white-space:nowrap;align-self:center}
 .dev-feat.ok .dev-feat-s{background:var(--sky);color:var(--navy);border-color:var(--sky)}
 .dev-gbp{margin:-4px 0 8px}
 @media (max-width:420px){.dev-feat{grid-template-columns:18px 1fr}.dev-feat-s{grid-column:2;justify-self:start}}
@@ -86,7 +86,7 @@ a.dev-persona:hover,a.dev-hcard:hover{border-color:var(--sky)}
 .dev-eur-note{display:none;margin:2px 0 0;text-align:center}
 html[data-currency="EUR"] .dev-eur-note{display:block}
 /* Phones: flag above the code so six pills fit in one row down to 320px. */
-@media (max-width:560px){.currency.dev-cur .dev-seg button{flex-direction:column;gap:4px;height:50px;min-height:50px;font-size:.72rem;padding:0 2px}.dev-flag{width:20px;height:13px}.dev-seg{gap:5px}}
+@media (max-width:560px){.currency.dev-cur .dev-seg button{flex-direction:column;gap:4px;height:50px;min-height:50px;font-size:.75rem;padding:0 2px}.dev-flag{width:20px;height:13px}.dev-seg{gap:5px}}
 @media (max-width:340px){.dev-seg{gap:3px}.currency.dev-cur .dev-seg button{font-size:.68rem}}
 .dev-faq details{margin:0 0 10px;padding:0}
 .dev-faq summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:10px 16px;font-weight:700;list-style-position:inside}
