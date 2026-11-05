@@ -132,10 +132,10 @@ footer nav{gap:14px 20px}
 .side.right{justify-content:flex-start;padding-left:10px}.side.right::after{left:0}
 .side .disc{position:relative;z-index:2;flex:0 0 auto;width:clamp(6px,2.4vw,10px)}
 .disc{display:block;width:10px;border-radius:3px;border:1px solid rgba(0,0,0,.4)}
-.p25{height:84px;background:#e53935}.p20{height:78px;background:#1e63e6}.p15{height:70px;background:#f9c80e}.p10{height:60px;background:#2fbf71}.p5{height:46px;background:#f1f5ff}.p2_5{height:36px;background:#5b6475}
+.p25{height:84px;background:#b71c1c}.p20{height:78px;background:#1e63e6}.p15{height:70px;background:#f9c80e}.p10{height:60px;background:#2fbf71}.p5{height:46px;background:#f1f5ff}.p2_5{height:36px;background:#5b6475}
 .plate-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .plate{min-width:52px;min-height:52px;border-radius:50%;border:3px solid rgba(255,255,255,.25);font:inherit;font-weight:800;color:#fff;cursor:pointer;text-shadow:0 1px 2px #000}
-.plate.p5{color:#05070d;text-shadow:none}
+.plate.p5,.plate.p10,.plate.p15{color:#062033;text-shadow:none}
 .plate-btns .reset{border-radius:var(--radius);background:var(--card2);color:var(--text);cursor:pointer;font:inherit}
 .loaded{text-align:center;margin:10px 0 0}
 .plate-btns .plate{width:56px;height:56px}

@@ -68,3 +68,6 @@ main.dev-pol{overflow-x:clip}
 .dev-pol .dev-sec-sub{margin-left:auto!important;margin-right:auto!important;text-align:center}
 @media (min-width:900px){.dev-pri .feat-grid{grid-template-columns:repeat(3,1fr)}}
 .dev-pol .prose>h2{text-align:center}
+
+/* Nov 5 audit: comparison empty "-" badge was transparent/tiny; show a visible muted em dash. */
+.badge.ghost{display:inline-flex;align-items:center;justify-content:center;min-width:1.25rem;min-height:1.25rem;padding:0 .35rem;font-size:.75rem;line-height:1;font-weight:700;color:var(--muted,#9aa6c2);background:rgba(154,166,194,.12);border:1px solid rgba(154,166,194,.35);border-radius:999px;opacity:1}
