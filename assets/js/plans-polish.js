@@ -36,7 +36,9 @@
       if (!m) return;
       var n = parseFloat(m[2].replace(/,/g, ''));
       var v = mult === 5 ? n * 5 : n / 5;
-      var s = (v % 1 === 0) ? String(v) : v.toFixed(2);
+      // Audit: whole pounds only — per-person lines round up (Under £5 …).
+      var whole = mult === 5 ? Math.round(v) : Math.ceil(v - 1e-9);
+      var s = String(whole);
       var txt = m[1] + s + m[3];
       if (o.textContent !== txt) o.textContent = txt;
     });

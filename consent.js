@@ -90,7 +90,7 @@
     '.prose .mg-cc-link{text-decoration:underline;text-underline-offset:2px}' +
     '.mg-cc-link:hover{text-decoration:underline}' +
     'body.mg-cc-open{padding-bottom:var(--mg-cc-h,0px)}' +
-    '@media (max-width:699px){.mg-cc-head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.mg-cc{padding:8px 12px 4px;font-size:.84rem}}' +
+    '@media (max-width:699px){.mg-cc-head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.mg-cc{padding:6px 10px 2px;font-size:.8rem;max-width:100%}}' +
     '@media (min-width:700px){.mg-cc{left:auto;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));width:420px;padding:14px 16px 10px;font-size:.92rem}' +
     '.mg-cc-head{font-size:1rem;margin-bottom:4px}}' +
     '@media (prefers-reduced-motion:no-preference){.mg-cc{animation:mg-cc-in .18s ease-out}@keyframes mg-cc-in{from{opacity:0}to{opacity:1}}}';
