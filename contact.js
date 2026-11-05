@@ -1,6 +1,6 @@
 /* Contact form: validates in the browser, then posts to our own form handler (Firebase function formSubmit, Nov 4, user t5034u),
    which saves the message and emails it to us. No email address appears in the page source.
-   Nov 5 (audit W-018): plate puzzle replaced with honeypot + time + simple question. */
+   Nov 5 (audit W-018): invisible anti-spam only — honeypot + minimum-time check (no visible question). */
 (function(){var f=document.getElementById('contact-form');if(!f)return;
 var ENDPOINT='https://europe-west2-meso-lab-app.cloudfunctions.net/formSubmit',t0=Date.now();f.action=ENDPOINT;
 var FALLBACK=' You can also WhatsApp us on +44 7405 725097, or try again later.';
@@ -9,11 +9,9 @@ var q=new URLSearchParams(location.search).get('subject');if(q){var o=f.querySel
 function show(list){var ul=errBox.querySelector('ul');ul.innerHTML='';list.forEach(function(m){var li=document.createElement('li');li.textContent=m;ul.appendChild(li)});errBox.hidden=!list.length;if(list.length)errBox.scrollIntoView({behavior:'smooth',block:'center'});}
 f.addEventListener('submit',function(e){e.preventDefault();ok.hidden=true;
  var v=function(n){return (f.elements[n].value||'').trim()},e2=[];
- var box=f.querySelector('.anti-spam'),ans=box?+(box.getAttribute('data-answer')||0):0;
  if(!v('name'))e2.push('Please enter your name.');
  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email')))e2.push('Please enter a valid email address.');
  if(v('message').length<10)e2.push('Please write a message of at least 10 characters.');
- if(+v('spotter_check')!==ans)e2.push('Please answer the quick check (2 + 2).');
  if(Date.now()-t0<3000)e2.push('That was a bit quick. Please take a moment and try again.');
  show(e2);if(e2.length)return;
  if(v('_honey')){ok.hidden=false;f.reset();return;}
