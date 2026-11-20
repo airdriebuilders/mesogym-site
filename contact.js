@@ -22,4 +22,4 @@ f.addEventListener('submit',function(e){e.preventDefault();ok.hidden=true;
  .then(function(x){if(x.r.ok&&x.b.ok===true){ok.hidden=false;f.reset();ok.scrollIntoView({behavior:'smooth',block:'center'});}
    else{var m=(x.b.errors&&x.b.errors[0])||x.b.error||'';show(['Sorry, your message wasn\'t sent'+(m?': '+m.replace(/\.$/,''):'')+'. Please try again in a few minutes.'+FALLBACK]);}})
  .catch(function(){show(['Sorry, we couldn\'t reach the message service. Please check your connection and try again.'+FALLBACK]);})
- .then(function(){clearTimeout(tm);btn.disabled=false;btn.textContent='Send Message';});});})();
+ .then(function(){clearTimeout(tm);btn.disabled=false;btn.textContent='Send message';});});})();

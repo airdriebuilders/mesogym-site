@@ -19,7 +19,7 @@ Object.keys(RULES).forEach(function(n){var el=f.elements[n];
 f.addEventListener('submit',function(e){e.preventDefault();sendErr.hidden=true;
  var bad=Object.keys(RULES).filter(function(n){return !check(n)});
  if(bad.length){f.elements[bad[0]].focus();return;}
- if(Date.now()-t0<3000){sendErr.textContent='That was quick! Please check your details and press Send Enquiry again.';sendErr.hidden=false;t0=0;return;}
+ if(Date.now()-t0<3000){sendErr.textContent='That was quick! Please check your details and press Send inquiry again.';sendErr.hidden=false;t0=0;return;}
  var finish=function(){var h=fields.offsetHeight;done.style.minHeight=Math.min(h,220)+'px';fields.hidden=true;done.hidden=false;done.focus({preventScroll:true});done.scrollIntoView({behavior:'smooth',block:'center'});};
  if(v('_honey')){finish();return;}
  var fd=new URLSearchParams();fd.set('form_type','corporate');['name','email','gym_group','locations','members','message'].forEach(function(n){fd.set(n,v(n))});
@@ -31,6 +31,6 @@ f.addEventListener('submit',function(e){e.preventDefault();sendErr.hidden=true;
  fetch(ENDPOINT,{method:'POST',headers:{Accept:'application/json'},body:fd,signal:ctl?ctl.signal:undefined})
  .then(function(r){return r.json().catch(function(){return {}}).then(function(b){return {r:r,b:b}})})
  .then(function(x){if(x.r.ok&&x.b.ok===true){f.reset();finish();}
-   else{var m=(x.b.errors&&x.b.errors[0])||x.b.error||'';sendErr.textContent='Sorry, your enquiry wasn’t sent'+(m?': '+m.replace(/\.$/,''):'')+'. Please try again in a few minutes. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;}})
- .catch(function(){sendErr.textContent='Sorry, we couldn’t reach the enquiry service. Please check your connection and try again. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;})
- .then(function(){clearTimeout(tm);btn.disabled=false;btn.textContent='Send Enquiry';});});})();
+   else{var m=(x.b.errors&&x.b.errors[0])||x.b.error||'';sendErr.textContent='Sorry, your inquiry wasn’t sent'+(m?': '+m.replace(/\.$/,''):'')+'. Please try again in a few minutes. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;}})
+ .catch(function(){sendErr.textContent='Sorry, we couldn’t reach the inquiry service. Please check your connection and try again. You can also WhatsApp us on +44 7405 725097.';sendErr.hidden=false;})
+ .then(function(){clearTimeout(tm);btn.disabled=false;btn.textContent='Send inquiry';});});})();
